@@ -9,21 +9,57 @@
 /* Begin PBXBuildFile section */
 		AC40B1A32729FC6300A4D0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1A22729FC6300A4D0D3 /* AppDelegate.swift */; };
 		AC40B1A52729FC6300A4D0D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1A42729FC6300A4D0D3 /* SceneDelegate.swift */; };
-		AC40B1A72729FC6300A4D0D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1A62729FC6300A4D0D3 /* ViewController.swift */; };
 		AC40B1AA2729FC6300A4D0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC40B1A82729FC6300A4D0D3 /* Main.storyboard */; };
 		AC40B1AC2729FC6500A4D0D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC40B1AB2729FC6500A4D0D3 /* Assets.xcassets */; };
 		AC40B1AF2729FC6500A4D0D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC40B1AD2729FC6500A4D0D3 /* LaunchScreen.storyboard */; };
+		AC40B1BD272A24B400A4D0D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1BC272A24B400A4D0D3 /* ViewController.swift */; };
+		AC40B1BF272AB20200A4D0D3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1BE272AB20200A4D0D3 /* Extensions.swift */; };
+		AC40B1C1272AB55C00A4D0D3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1C0272AB55C00A4D0D3 /* SettingsViewController.swift */; };
+		AC40B1C3272AC33E00A4D0D3 /* BadgesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1C2272AC33E00A4D0D3 /* BadgesViewController.swift */; };
+		AC40B1C5272AC37D00A4D0D3 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1C4272AC37D00A4D0D3 /* GoalsViewController.swift */; };
+		AC40B1C7272AC39900A4D0D3 /* InvestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1C6272AC39900A4D0D3 /* InvestViewController.swift */; };
+		AC40B1C9272AC3A300A4D0D3 /* SavingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1C8272AC3A300A4D0D3 /* SavingsViewController.swift */; };
+		AC40B1CB272AC43D00A4D0D3 /* SpendingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1CA272AC43D00A4D0D3 /* SpendingsViewController.swift */; };
+		AC40B1CD272AC44B00A4D0D3 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1CC272AC44B00A4D0D3 /* ConverterViewController.swift */; };
+		AC40B1CF272AC45800A4D0D3 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1CE272AC45800A4D0D3 /* SplitViewController.swift */; };
+		AC40B1D1272AC46300A4D0D3 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1D0272AC46300A4D0D3 /* CalculatorViewController.swift */; };
+		AC40B1D3272AC47D00A4D0D3 /* BirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1D2272AC47D00A4D0D3 /* BirthdayViewController.swift */; };
+		AC40B1D5272AC49B00A4D0D3 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1D4272AC49B00A4D0D3 /* ReminderViewController.swift */; };
+		AC40B1D7272AC4A600A4D0D3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1D6272AC4A600A4D0D3 /* HomeViewController.swift */; };
+		AC40B1DC272B362E00A4D0D3 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1DB272B362E00A4D0D3 /* Group.swift */; };
+		AC40B1DE272B365800A4D0D3 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1DD272B365800A4D0D3 /* Alarm.swift */; };
+		AC40B1ED272B379100A4D0D3 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1EC272B379100A4D0D3 /* GroupViewController.swift */; };
+		AC40B1EF272B394E00A4D0D3 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1EE272B394E00A4D0D3 /* Helper.swift */; };
+		AC40B1F1272B3EB100A4D0D3 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1F0272B3EB100A4D0D3 /* AlarmViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC40B19F2729FC6300A4D0D3 /* iCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC40B1A22729FC6300A4D0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC40B1A42729FC6300A4D0D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC40B1A62729FC6300A4D0D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC40B1A92729FC6300A4D0D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC40B1AB2729FC6500A4D0D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC40B1AE2729FC6500A4D0D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC40B1B02729FC6500A4D0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC40B1BC272A24B400A4D0D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC40B1BE272AB20200A4D0D3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AC40B1C0272AB55C00A4D0D3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AC40B1C2272AC33E00A4D0D3 /* BadgesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesViewController.swift; sourceTree = "<group>"; };
+		AC40B1C4272AC37D00A4D0D3 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
+		AC40B1C6272AC39900A4D0D3 /* InvestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestViewController.swift; sourceTree = "<group>"; };
+		AC40B1C8272AC3A300A4D0D3 /* SavingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsViewController.swift; sourceTree = "<group>"; };
+		AC40B1CA272AC43D00A4D0D3 /* SpendingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsViewController.swift; sourceTree = "<group>"; };
+		AC40B1CC272AC44B00A4D0D3 /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		AC40B1CE272AC45800A4D0D3 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		AC40B1D0272AC46300A4D0D3 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		AC40B1D2272AC47D00A4D0D3 /* BirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewController.swift; sourceTree = "<group>"; };
+		AC40B1D4272AC49B00A4D0D3 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		AC40B1D6272AC4A600A4D0D3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AC40B1DB272B362E00A4D0D3 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		AC40B1DD272B365800A4D0D3 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		AC40B1EC272B379100A4D0D3 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		AC40B1EE272B394E00A4D0D3 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		AC40B1F0272B3EB100A4D0D3 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +94,159 @@
 			children = (
 				AC40B1A22729FC6300A4D0D3 /* AppDelegate.swift */,
 				AC40B1A42729FC6300A4D0D3 /* SceneDelegate.swift */,
-				AC40B1A62729FC6300A4D0D3 /* ViewController.swift */,
-				AC40B1A82729FC6300A4D0D3 /* Main.storyboard */,
+				AC40B1DA272B361E00A4D0D3 /* Model */,
+				AC40B1D9272B361000A4D0D3 /* Controller */,
+				AC40B1D8272B35F800A4D0D3 /* View */,
 				AC40B1AB2729FC6500A4D0D3 /* Assets.xcassets */,
 				AC40B1AD2729FC6500A4D0D3 /* LaunchScreen.storyboard */,
 				AC40B1B02729FC6500A4D0D3 /* Info.plist */,
 			);
 			path = iCount;
+			sourceTree = "<group>";
+		};
+		AC40B1D8272B35F800A4D0D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1A82729FC6300A4D0D3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC40B1D9272B361000A4D0D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1BC272A24B400A4D0D3 /* ViewController.swift */,
+				AC40B1EA272B374900A4D0D3 /* Home */,
+				AC40B1E9272B374200A4D0D3 /* Reminder */,
+				AC40B1E8272B373800A4D0D3 /* Birthday */,
+				AC40B1E7272B373100A4D0D3 /* Calculator */,
+				AC40B1E6272B372A00A4D0D3 /* Split */,
+				AC40B1E5272B372300A4D0D3 /* Converter */,
+				AC40B1E4272B371C00A4D0D3 /* Spendings */,
+				AC40B1E3272B371500A4D0D3 /* Savings */,
+				AC40B1E2272B370E00A4D0D3 /* Invest */,
+				AC40B1E1272B370700A4D0D3 /* Goals */,
+				AC40B1E0272B36FD00A4D0D3 /* Badges */,
+				AC40B1DF272B36F500A4D0D3 /* Settings */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AC40B1DA272B361E00A4D0D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1BE272AB20200A4D0D3 /* Extensions.swift */,
+				AC40B1EB272B376400A4D0D3 /* Reminder */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC40B1DF272B36F500A4D0D3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1C0272AB55C00A4D0D3 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		AC40B1E0272B36FD00A4D0D3 /* Badges */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1C2272AC33E00A4D0D3 /* BadgesViewController.swift */,
+			);
+			path = Badges;
+			sourceTree = "<group>";
+		};
+		AC40B1E1272B370700A4D0D3 /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1C4272AC37D00A4D0D3 /* GoalsViewController.swift */,
+			);
+			path = Goals;
+			sourceTree = "<group>";
+		};
+		AC40B1E2272B370E00A4D0D3 /* Invest */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1C6272AC39900A4D0D3 /* InvestViewController.swift */,
+			);
+			path = Invest;
+			sourceTree = "<group>";
+		};
+		AC40B1E3272B371500A4D0D3 /* Savings */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1C8272AC3A300A4D0D3 /* SavingsViewController.swift */,
+			);
+			path = Savings;
+			sourceTree = "<group>";
+		};
+		AC40B1E4272B371C00A4D0D3 /* Spendings */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1CA272AC43D00A4D0D3 /* SpendingsViewController.swift */,
+			);
+			path = Spendings;
+			sourceTree = "<group>";
+		};
+		AC40B1E5272B372300A4D0D3 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1CC272AC44B00A4D0D3 /* ConverterViewController.swift */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		AC40B1E6272B372A00A4D0D3 /* Split */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1CE272AC45800A4D0D3 /* SplitViewController.swift */,
+			);
+			path = Split;
+			sourceTree = "<group>";
+		};
+		AC40B1E7272B373100A4D0D3 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1D0272AC46300A4D0D3 /* CalculatorViewController.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		AC40B1E8272B373800A4D0D3 /* Birthday */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1D2272AC47D00A4D0D3 /* BirthdayViewController.swift */,
+			);
+			path = Birthday;
+			sourceTree = "<group>";
+		};
+		AC40B1E9272B374200A4D0D3 /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1D4272AC49B00A4D0D3 /* ReminderViewController.swift */,
+				AC40B1EC272B379100A4D0D3 /* GroupViewController.swift */,
+				AC40B1F0272B3EB100A4D0D3 /* AlarmViewController.swift */,
+			);
+			path = Reminder;
+			sourceTree = "<group>";
+		};
+		AC40B1EA272B374900A4D0D3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1D6272AC4A600A4D0D3 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AC40B1EB272B376400A4D0D3 /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				AC40B1DD272B365800A4D0D3 /* Alarm.swift */,
+				AC40B1EE272B394E00A4D0D3 /* Helper.swift */,
+				AC40B1DB272B362E00A4D0D3 /* Group.swift */,
+			);
+			path = Reminder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +320,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC40B1A72729FC6300A4D0D3 /* ViewController.swift in Sources */,
+				AC40B1C9272AC3A300A4D0D3 /* SavingsViewController.swift in Sources */,
+				AC40B1DC272B362E00A4D0D3 /* Group.swift in Sources */,
+				AC40B1F1272B3EB100A4D0D3 /* AlarmViewController.swift in Sources */,
+				AC40B1C5272AC37D00A4D0D3 /* GoalsViewController.swift in Sources */,
+				AC40B1D5272AC49B00A4D0D3 /* ReminderViewController.swift in Sources */,
+				AC40B1ED272B379100A4D0D3 /* GroupViewController.swift in Sources */,
+				AC40B1CB272AC43D00A4D0D3 /* SpendingsViewController.swift in Sources */,
+				AC40B1BD272A24B400A4D0D3 /* ViewController.swift in Sources */,
+				AC40B1EF272B394E00A4D0D3 /* Helper.swift in Sources */,
 				AC40B1A32729FC6300A4D0D3 /* AppDelegate.swift in Sources */,
 				AC40B1A52729FC6300A4D0D3 /* SceneDelegate.swift in Sources */,
+				AC40B1C1272AB55C00A4D0D3 /* SettingsViewController.swift in Sources */,
+				AC40B1C7272AC39900A4D0D3 /* InvestViewController.swift in Sources */,
+				AC40B1CD272AC44B00A4D0D3 /* ConverterViewController.swift in Sources */,
+				AC40B1DE272B365800A4D0D3 /* Alarm.swift in Sources */,
+				AC40B1C3272AC33E00A4D0D3 /* BadgesViewController.swift in Sources */,
+				AC40B1D7272AC4A600A4D0D3 /* HomeViewController.swift in Sources */,
+				AC40B1D1272AC46300A4D0D3 /* CalculatorViewController.swift in Sources */,
+				AC40B1BF272AB20200A4D0D3 /* Extensions.swift in Sources */,
+				AC40B1CF272AC45800A4D0D3 /* SplitViewController.swift in Sources */,
+				AC40B1D3272AC47D00A4D0D3 /* BirthdayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +492,7 @@
 				DEVELOPMENT_TEAM = 63XWRVA4JU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iCount/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to import a photo for your alarm.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,7 +507,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,6 +521,7 @@
 				DEVELOPMENT_TEAM = 63XWRVA4JU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iCount/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to import a photo for your alarm.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,7 +536,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

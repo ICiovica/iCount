@@ -8,6 +8,20 @@
 import UIKit
 
 class AlarmViewController: UITableViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    lazy var gradient: CAGradientLayer = {
+         let gradient = CAGradientLayer()
+         gradient.type = .axial
+         gradient.colors = [
+             UIColor.colorHunt.cgColor,
+             UIColor.purple.cgColor,
+             UIColor.cyan.cgColor
+         ]
+         gradient.locations = [0, 0.25, 1]
+         
+         return gradient
+     }()
+    
     var alarm: Alarm!
 
     @IBOutlet var name: UITextField!
@@ -18,6 +32,12 @@ class AlarmViewController: UITableViewController, UITextFieldDelegate, UIImagePi
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        gradient.frame = view.bounds
+        gradient.zPosition = -10
+        gradient.startPoint = CGPoint(x: 0, y: 1)
+        gradient.endPoint = CGPoint(x: 0, y: 0)
+        view.layer.addSublayer(gradient)
 
         title = alarm.name
 
@@ -50,14 +70,15 @@ class AlarmViewController: UITableViewController, UITextFieldDelegate, UIImagePi
 
         save()
     }
-
-    @IBAction func imageViewTapped(_ sender: UIImageView) {
+    
+    
+    @IBAction func imageViewTapped(_ sender: UITapGestureRecognizer) {
         let vc = UIImagePickerController()
         vc.modalPresentationStyle = .formSheet
         vc.delegate = self
         present(vc, animated: true)
     }
-
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         dismiss(animated: true)
 

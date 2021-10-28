@@ -35,8 +35,8 @@ class ReminderViewController: UITableViewController, UNUserNotificationCenterDel
         view.layer.addSublayer(gradient)
         
         let titleAttributes = [NSAttributedString.Key.font: UIFont(name: "Arial Rounded MT Bold", size: 20)!]
-        navigationController?.navigationBar.titleTextAttributes = titleAttributes
 
+        navigationController?.navigationBar.titleTextAttributes = titleAttributes
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addGroup))
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Groups", style: .plain, target: nil, action: nil)
 

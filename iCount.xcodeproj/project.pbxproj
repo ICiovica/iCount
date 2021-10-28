@@ -492,6 +492,7 @@
 				DEVELOPMENT_TEAM = 63XWRVA4JU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iCount/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to import a photo for your alarm.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to import a photo for your alarm.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -521,6 +522,7 @@
 				DEVELOPMENT_TEAM = 63XWRVA4JU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iCount/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to import a photo for your alarm.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to import a photo for your alarm.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

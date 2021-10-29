@@ -31,6 +31,7 @@
 		AC40B1ED272B379100A4D0D3 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1EC272B379100A4D0D3 /* GroupViewController.swift */; };
 		AC40B1EF272B394E00A4D0D3 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1EE272B394E00A4D0D3 /* Helper.swift */; };
 		AC40B1F1272B3EB100A4D0D3 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1F0272B3EB100A4D0D3 /* AlarmViewController.swift */; };
+		AC963A21272C2F5100898BEB /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC963A20272C2F5100898BEB /* CalculatorLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		AC40B1EC272B379100A4D0D3 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		AC40B1EE272B394E00A4D0D3 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		AC40B1F0272B3EB100A4D0D3 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		AC963A20272C2F5100898BEB /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				AC40B1BE272AB20200A4D0D3 /* Extensions.swift */,
 				AC40B1EB272B376400A4D0D3 /* Reminder */,
+				AC963A22272C2F6900898BEB /* Calculator */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,6 +252,14 @@
 			path = Reminder;
 			sourceTree = "<group>";
 		};
+		AC963A22272C2F6900898BEB /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				AC963A20272C2F5100898BEB /* CalculatorLogic.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -326,6 +337,7 @@
 				AC40B1C5272AC37D00A4D0D3 /* GoalsViewController.swift in Sources */,
 				AC40B1D5272AC49B00A4D0D3 /* ReminderViewController.swift in Sources */,
 				AC40B1ED272B379100A4D0D3 /* GroupViewController.swift in Sources */,
+				AC963A21272C2F5100898BEB /* CalculatorLogic.swift in Sources */,
 				AC40B1CB272AC43D00A4D0D3 /* SpendingsViewController.swift in Sources */,
 				AC40B1BD272A24B400A4D0D3 /* ViewController.swift in Sources */,
 				AC40B1EF272B394E00A4D0D3 /* Helper.swift in Sources */,

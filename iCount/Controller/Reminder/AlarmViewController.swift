@@ -9,19 +9,6 @@ import UIKit
 
 class AlarmViewController: UITableViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    lazy var gradient: CAGradientLayer = {
-         let gradient = CAGradientLayer()
-         gradient.type = .axial
-         gradient.colors = [
-             UIColor.colorHunt.cgColor,
-             UIColor.purple.cgColor,
-             UIColor.cyan.cgColor
-         ]
-         gradient.locations = [0, 0.25, 1]
-         
-         return gradient
-     }()
-    
     var alarm: Alarm!
 
     @IBOutlet var name: UITextField!
@@ -32,14 +19,6 @@ class AlarmViewController: UITableViewController, UITextFieldDelegate, UIImagePi
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        gradient.frame = view.bounds
-        gradient.zPosition = -10
-        gradient.startPoint = CGPoint(x: 0, y: 1)
-        gradient.endPoint = CGPoint(x: 0, y: 0)
-        view.layer.addSublayer(gradient)
-
-        title = alarm.name
 
         name.text = alarm.name
         caption.text = alarm.caption
@@ -69,6 +48,10 @@ class AlarmViewController: UITableViewController, UITextFieldDelegate, UIImagePi
         alarm.time = datePicker.date
 
         save()
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        (view as! UITableViewHeaderFooterView).textLabel?.textColor = UIColor.white
     }
     
     

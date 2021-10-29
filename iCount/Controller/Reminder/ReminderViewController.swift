@@ -9,36 +9,14 @@ import UIKit
 import UserNotifications
 
 class ReminderViewController: UITableViewController, UNUserNotificationCenterDelegate {
-
-    lazy var gradient: CAGradientLayer = {
-         let gradient = CAGradientLayer()
-         gradient.type = .axial
-         gradient.colors = [
-             UIColor.colorHunt.cgColor,
-             UIColor.purple.cgColor,
-             UIColor.cyan.cgColor
-         ]
-         gradient.locations = [0, 0.25, 1]
-         
-         return gradient
-     }()
     
     var groups = [Group]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        gradient.frame = view.bounds
-        gradient.zPosition = -10
-        gradient.startPoint = CGPoint(x: 0, y: 1)
-        gradient.endPoint = CGPoint(x: 0, y: 0)
-        view.layer.addSublayer(gradient)
-        
-        let titleAttributes = [NSAttributedString.Key.font: UIFont(name: "Arial Rounded MT Bold", size: 20)!]
-
-        navigationController?.navigationBar.titleTextAttributes = titleAttributes
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addGroup))
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Groups", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Reminders", style: .plain, target: nil, action: nil)
 
         NotificationCenter.default.addObserver(self, selector: #selector(save), name: Notification.Name("save"), object: nil)
     }
@@ -104,8 +82,9 @@ class ReminderViewController: UITableViewController, UNUserNotificationCenterDel
         }
     }
 
+    
     @objc func addGroup() {
-        let newGroup = Group(name: "Name this group", playSound: true, enabled: false, alarms: [])
+        let newGroup = Group(name: "Group", playSound: true, enabled: false, alarms: [])
         groups.append(newGroup)
 
         performSegue(withIdentifier: "EditGroup", sender: newGroup)

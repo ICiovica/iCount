@@ -9,19 +9,6 @@ import UIKit
 
 class GroupViewController: UITableViewController, UITextFieldDelegate {
     
-    lazy var gradient: CAGradientLayer = {
-         let gradient = CAGradientLayer()
-         gradient.type = .axial
-         gradient.colors = [
-             UIColor.colorHunt.cgColor,
-             UIColor.purple.cgColor,
-             UIColor.cyan.cgColor
-         ]
-         gradient.locations = [0, 0.25, 1]
-         
-         return gradient
-     }()
-    
     var group: Group!
 
     let playSoundTag = 1001
@@ -29,12 +16,6 @@ class GroupViewController: UITableViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        gradient.frame = view.bounds
-        gradient.zPosition = -10
-        gradient.startPoint = CGPoint(x: 0, y: 1)
-        gradient.endPoint = CGPoint(x: 0, y: 0)
-        view.layer.addSublayer(gradient)
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAlarm))
         title = group.name
@@ -170,7 +151,7 @@ class GroupViewController: UITableViewController, UITextFieldDelegate {
     }
 
     @objc func addAlarm() {
-        let newAlarm = Alarm(name: "Name this alarm", caption: "Add an optional description", time: Date(), image: "")
+        let newAlarm = Alarm(name: "Rename this alarm", caption: "Add an optional description", time: Date(), image: "")
         group.alarms.append(newAlarm)
 
         performSegue(withIdentifier: "EditAlarm", sender: newAlarm)

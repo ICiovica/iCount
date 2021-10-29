@@ -32,6 +32,7 @@
 		AC40B1EF272B394E00A4D0D3 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1EE272B394E00A4D0D3 /* Helper.swift */; };
 		AC40B1F1272B3EB100A4D0D3 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1F0272B3EB100A4D0D3 /* AlarmViewController.swift */; };
 		AC963A21272C2F5100898BEB /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC963A20272C2F5100898BEB /* CalculatorLogic.swift */; };
+		AC963A24272C384100898BEB /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC963A23272C384100898BEB /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		AC40B1EE272B394E00A4D0D3 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		AC40B1F0272B3EB100A4D0D3 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		AC963A20272C2F5100898BEB /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
+		AC963A23272C384100898BEB /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				AC40B1CE272AC45800A4D0D3 /* SplitViewController.swift */,
+				AC963A23272C384100898BEB /* ResultsViewController.swift */,
 			);
 			path = Split;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC40B1C9272AC3A300A4D0D3 /* SavingsViewController.swift in Sources */,
+				AC963A24272C384100898BEB /* ResultsViewController.swift in Sources */,
 				AC40B1DC272B362E00A4D0D3 /* Group.swift in Sources */,
 				AC40B1F1272B3EB100A4D0D3 /* AlarmViewController.swift in Sources */,
 				AC40B1C5272AC37D00A4D0D3 /* GoalsViewController.swift in Sources */,

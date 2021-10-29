@@ -8,7 +8,13 @@
 import UIKit
 
 class SplitViewController: UIViewController {
-
+    
+    @IBOutlet var billTextField: UITextField!
+    @IBOutlet var zeroPctButton: UIButton!
+    @IBOutlet var tenPctButton: UIButton!
+    @IBOutlet var twuentyPctButton: UIButton!
+    @IBOutlet var splitNumberLabel: UILabel!
+    
     lazy var gradient: CAGradientLayer = {
          let gradient = CAGradientLayer()
          gradient.type = .axial
@@ -22,6 +28,11 @@ class SplitViewController: UIViewController {
          return gradient
      }()
     
+    var tipSelected = 0.0
+    var tipAmount: Double?
+    var total: String?
+    var numberOfPeople = 2
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,5 +41,53 @@ class SplitViewController: UIViewController {
         gradient.startPoint = CGPoint(x: 0, y: 1)
         gradient.endPoint = CGPoint(x: 0, y: 0)
         view.layer.addSublayer(gradient)
+        
+        let tapRecognizer = UITapGestureRecognizer()
+        tapRecognizer.addTarget(self, action: #selector(didTapView))
+        self.view.addGestureRecognizer(tapRecognizer)
+    }
+    
+    @objc func didTapView(){
+      self.view.endEditing(true)
+    }
+    
+    @IBAction func pctButtonTapped(_ sender: UIButton) {
+        if sender == zeroPctButton {
+            zeroPctButton.isSelected = true
+            tenPctButton.isSelected = false
+            twuentyPctButton.isSelected = false
+            tipSelected = 0
+        } else if sender == tenPctButton {
+            zeroPctButton.isSelected = false
+            tenPctButton.isSelected = true
+            twuentyPctButton.isSelected = false
+            tipSelected = 0.1
+        } else if sender == twuentyPctButton {
+            zeroPctButton.isSelected = false
+            tenPctButton.isSelected = false
+            twuentyPctButton.isSelected = true
+            tipSelected = 0.2
+        }
+    }
+    
+    @IBAction func calculateButtonTapped(_ sender: UIButton) {
+       let value = Double(billTextField.text ?? "0.0")
+        
+        tipAmount = (value! + value! * tipSelected) / Double(numberOfPeople)
+        
+        total = String(format: "%.2f", tipAmount ?? 0.0)
+    }
+    
+    @IBAction func stepperTapped(_ sender: UIStepper) {
+        splitNumberLabel.text = String(format: "%.0f", sender.value)
+        numberOfPeople = Int(sender.value)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ResultsViewController" {
+            let destinationVC = segue.destination as! ResultsViewController
+            destinationVC.result = String(format: "%.2f", tipAmount ?? 0.0)
+            destinationVC.settings = "Split between \(numberOfPeople) people, with \(Int(tipSelected * 100))% tip."
+        }
     }
 }

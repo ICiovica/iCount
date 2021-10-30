@@ -31,6 +31,8 @@
 		AC40B1ED272B379100A4D0D3 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1EC272B379100A4D0D3 /* GroupViewController.swift */; };
 		AC40B1EF272B394E00A4D0D3 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1EE272B394E00A4D0D3 /* Helper.swift */; };
 		AC40B1F1272B3EB100A4D0D3 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1F0272B3EB100A4D0D3 /* AlarmViewController.swift */; };
+		AC77C7E4272D73BD003B1E00 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77C7E3272D73BD003B1E00 /* CoinData.swift */; };
+		AC77C7E6272D73D9003B1E00 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77C7E5272D73D9003B1E00 /* CoinManager.swift */; };
 		AC963A21272C2F5100898BEB /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC963A20272C2F5100898BEB /* CalculatorLogic.swift */; };
 		AC963A24272C384100898BEB /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC963A23272C384100898BEB /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,8 @@
 		AC40B1EC272B379100A4D0D3 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		AC40B1EE272B394E00A4D0D3 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		AC40B1F0272B3EB100A4D0D3 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		AC77C7E3272D73BD003B1E00 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		AC77C7E5272D73D9003B1E00 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 		AC963A20272C2F5100898BEB /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
 		AC963A23272C384100898BEB /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				AC40B1BE272AB20200A4D0D3 /* Extensions.swift */,
+				AC77C7E7272D73F1003B1E00 /* Invest */,
 				AC40B1EB272B376400A4D0D3 /* Reminder */,
 				AC963A22272C2F6900898BEB /* Calculator */,
 			);
@@ -255,6 +260,15 @@
 			path = Reminder;
 			sourceTree = "<group>";
 		};
+		AC77C7E7272D73F1003B1E00 /* Invest */ = {
+			isa = PBXGroup;
+			children = (
+				AC77C7E5272D73D9003B1E00 /* CoinManager.swift */,
+				AC77C7E3272D73BD003B1E00 /* CoinData.swift */,
+			);
+			name = Invest;
+			sourceTree = "<group>";
+		};
 		AC963A22272C2F6900898BEB /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC77C7E6272D73D9003B1E00 /* CoinManager.swift in Sources */,
 				AC40B1C9272AC3A300A4D0D3 /* SavingsViewController.swift in Sources */,
 				AC963A24272C384100898BEB /* ResultsViewController.swift in Sources */,
 				AC40B1DC272B362E00A4D0D3 /* Group.swift in Sources */,
@@ -346,6 +361,7 @@
 				AC40B1BD272A24B400A4D0D3 /* ViewController.swift in Sources */,
 				AC40B1EF272B394E00A4D0D3 /* Helper.swift in Sources */,
 				AC40B1A32729FC6300A4D0D3 /* AppDelegate.swift in Sources */,
+				AC77C7E4272D73BD003B1E00 /* CoinData.swift in Sources */,
 				AC40B1A52729FC6300A4D0D3 /* SceneDelegate.swift in Sources */,
 				AC40B1C1272AB55C00A4D0D3 /* SettingsViewController.swift in Sources */,
 				AC40B1C7272AC39900A4D0D3 /* InvestViewController.swift in Sources */,

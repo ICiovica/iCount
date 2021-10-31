@@ -6,13 +6,22 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class InvestViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate  {
     
     @IBOutlet var currencyLabel: UILabel!
-    @IBOutlet var bitcoinLabel: UILabel!
+    @IBOutlet var bitcoinLabel: CLTypingLabel!
     @IBOutlet var currencyPicker: UIPickerView!
 
+    @IBOutlet var bitcoinView: UIStackView!
+    
+    @IBOutlet var chooseCurrency: UIView!
+    
+    @IBOutlet var chooseText: UITextField!
+    
+    @IBOutlet var buyView: UIStackView!
+    
     var coinManager = CoinManager()
     
     lazy var gradient: CAGradientLayer = {
@@ -42,8 +51,16 @@ class InvestViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         currencyPicker.delegate = self
         
         bitcoinLabel.adjustsFontSizeToFitWidth = true
+        
+        bitcoinView.isHidden = true
+        buyView.isHidden = true
     }
     
+    @IBAction func buyBTC(_ sender: UIButton) {
+        if let url = URL(string: "https://bitcoin.org/en/buy") {
+            UIApplication.shared.open(url)
+        }
+    }
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -57,11 +74,16 @@ class InvestViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        chooseCurrency.isHidden = true
+        chooseText.isHidden = true
+        
         let selectedCurrency = coinManager.currencyArray[row]
         currencyLabel.text = selectedCurrency
         coinManager.getCoinPrice(for: selectedCurrency)
+        bitcoinView.isHidden = false
+        buyView.isHidden = false
+        
     }
-
 }
 
 extension InvestViewController: CoinManagerDelegate {

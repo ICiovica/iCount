@@ -12,7 +12,6 @@ protocol CoinManagerDelegate {
     func didFailWithError(error: Error)
 }
 
-
 struct CoinManager {
     
     let baseURL = "https://rest.coinapi.io/v1/exchangerate/BTC"
@@ -65,6 +64,4 @@ struct CoinManager {
             return nil
         }
     }
-    
-    
 }

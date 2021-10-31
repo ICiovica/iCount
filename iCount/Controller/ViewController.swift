@@ -20,14 +20,14 @@ class ViewController: UIViewController {
             UIColor.purple.cgColor,
             UIColor.cyan.cgColor
         ]
-       gradient.locations = [0, 0.25, 1]
-
+        gradient.locations = [0, 0.25, 1]
+        
         return gradient
     }()
     
-     let dueDateFormatter: DateFormatter = {
+    let dueDateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-         formatter.dateStyle = .full
+        formatter.dateStyle = .full
         return formatter
     }()
     
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         gradient.frame = view.bounds
         gradient.zPosition = -10
         gradient.startPoint = CGPoint(x: 0, y: 1)
@@ -50,9 +50,9 @@ class ViewController: UIViewController {
         dateLabel.textColor = .clear
     }
     
-   @objc func rollDate() {
-       dateLabel.textColor = .white
-       dateLabel.text = dueDateFormatter.string(from: date)
+    @objc func rollDate() {
+        dateLabel.textColor = .white
+        dateLabel.text = dueDateFormatter.string(from: date)
     }
     
     @IBAction func goToHome(_ sender: UITapGestureRecognizer) {

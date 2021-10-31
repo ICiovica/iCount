@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -308,7 +309,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <outletCollection property="gestureRecognizers" destination="dn5-tZ-bVG" appends="YES" id="RJQ-9p-D6C"/>
+                                                                    <outletCollection property="gestureRecognizers" destination="Fm7-6d-IvR" appends="YES" id="iXR-MX-k9G"/>
                                                                 </connections>
                                                             </imageView>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Crypto" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYN-cS-ELf">
@@ -439,9 +440,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qSM-lb-LHB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="kkf-8B-4Y0">
+                <tapGestureRecognizer id="Fm7-6d-IvR">
                     <connections>
-                        <action selector="goToHome:" destination="uMX-X5-Tnm" id="625-8g-Hgw"/>
+                        <action selector="goToInvest:" destination="uMX-X5-Tnm" id="MCb-EW-PXD"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="MtD-bR-BNj">
@@ -449,29 +450,19 @@
                         <action selector="goToReminder:" destination="uMX-X5-Tnm" id="dXj-Uv-WaW"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="NMA-Wg-NIU">
+                    <connections>
+                        <action selector="goToGoals:" destination="uMX-X5-Tnm" id="uLJ-eV-r4Q"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="rpL-Eo-zLu">
+                    <connections>
+                        <action selector="goToSettings:" destination="uMX-X5-Tnm" id="15Q-Dv-FWp"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <tapGestureRecognizer id="Sjd-IR-Mjq">
                     <connections>
                         <action selector="goToBirthday:" destination="uMX-X5-Tnm" id="aVs-fZ-4Ua"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="b1H-Hd-Ed1">
-                    <connections>
-                        <action selector="goToCalculator:" destination="uMX-X5-Tnm" id="adG-wm-aMh"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="JLQ-lz-Vxv">
-                    <connections>
-                        <action selector="goToSplit:" destination="uMX-X5-Tnm" id="o32-p6-ADS"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="PeX-l5-KQD">
-                    <connections>
-                        <action selector="goToConverter:" destination="uMX-X5-Tnm" id="7lI-Xb-CLa"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="h2l-zG-SPl">
-                    <connections>
-                        <action selector="goToSpendings:" destination="uMX-X5-Tnm" id="2Hl-03-gGd"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="tKJ-1e-Vj0">
@@ -479,14 +470,9 @@
                         <action selector="goToSavings:" destination="uMX-X5-Tnm" id="8nx-om-OXp"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="dn5-tZ-bVG">
+                <tapGestureRecognizer id="PeX-l5-KQD">
                     <connections>
-                        <action selector="goToInvest:" destination="uMX-X5-Tnm" id="gG7-36-mD0"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="NMA-Wg-NIU">
-                    <connections>
-                        <action selector="goToGoals:" destination="uMX-X5-Tnm" id="uLJ-eV-r4Q"/>
+                        <action selector="goToConverter:" destination="uMX-X5-Tnm" id="7lI-Xb-CLa"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="s1u-LS-WG5">
@@ -494,9 +480,24 @@
                         <action selector="goToBadges:" destination="uMX-X5-Tnm" id="0WZ-R4-pd5"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="rpL-Eo-zLu">
+                <tapGestureRecognizer id="JLQ-lz-Vxv">
                     <connections>
-                        <action selector="goToSettings:" destination="uMX-X5-Tnm" id="15Q-Dv-FWp"/>
+                        <action selector="goToSplit:" destination="uMX-X5-Tnm" id="o32-p6-ADS"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="h2l-zG-SPl">
+                    <connections>
+                        <action selector="goToSpendings:" destination="uMX-X5-Tnm" id="2Hl-03-gGd"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="b1H-Hd-Ed1">
+                    <connections>
+                        <action selector="goToCalculator:" destination="uMX-X5-Tnm" id="adG-wm-aMh"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="kkf-8B-4Y0">
+                    <connections>
+                        <action selector="goToHome:" destination="uMX-X5-Tnm" id="625-8g-Hgw"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -612,6 +613,17 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQj-ve-0Xc" userLabel="Coin View">
                                         <rect key="frame" x="0.0" y="85" width="374" height="80"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pK-8Q-611">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Select your currency" borderStyle="roundedRect" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="4Rt-av-MYg">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qa2-gm-T3C">
                                                 <rect key="frame" x="20" y="0.0" width="334" height="80"/>
                                                 <subviews>
@@ -623,13 +635,13 @@
                                                             <constraint firstAttribute="width" constant="80" id="vzO-BT-Squ"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G77-mE-wAo">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G77-mE-wAo" customClass="CLTypingLabel" customModule="CLTypingLabel">
                                                         <rect key="frame" x="90" y="15" width="154" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOc-Ce-9Fb">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GBP" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOc-Ce-9Fb">
                                                         <rect key="frame" x="254" y="22" width="80" height="36"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -645,14 +657,22 @@
                                         <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Qa2-gm-T3C" secondAttribute="trailing" constant="20" id="3Wq-q2-6yo"/>
+                                            <constraint firstAttribute="trailing" secondItem="6pK-8Q-611" secondAttribute="trailing" id="8Rb-BI-F3M"/>
+                                            <constraint firstAttribute="bottom" secondItem="6pK-8Q-611" secondAttribute="bottom" id="E7q-Qx-5r8"/>
+                                            <constraint firstItem="6pK-8Q-611" firstAttribute="top" secondItem="JQj-ve-0Xc" secondAttribute="top" id="IiC-Ft-LKO"/>
                                             <constraint firstItem="G77-mE-wAo" firstAttribute="centerY" secondItem="JQj-ve-0Xc" secondAttribute="centerY" id="JVY-mJ-C6U"/>
+                                            <constraint firstItem="4Rt-av-MYg" firstAttribute="leading" secondItem="JQj-ve-0Xc" secondAttribute="leading" id="NKV-DR-ukC"/>
+                                            <constraint firstAttribute="bottom" secondItem="4Rt-av-MYg" secondAttribute="bottom" id="Okg-zw-3QA"/>
                                             <constraint firstItem="Qa2-gm-T3C" firstAttribute="leading" secondItem="JQj-ve-0Xc" secondAttribute="leading" constant="20" id="Pfq-Vs-RC0"/>
                                             <constraint firstItem="Qa2-gm-T3C" firstAttribute="leading" secondItem="JQj-ve-0Xc" secondAttribute="leading" constant="20" id="V3U-nn-liL"/>
                                             <constraint firstAttribute="bottom" secondItem="Qa2-gm-T3C" secondAttribute="bottom" id="VSh-CM-fip"/>
                                             <constraint firstAttribute="height" constant="80" id="WV9-oJ-NXW"/>
+                                            <constraint firstItem="6pK-8Q-611" firstAttribute="leading" secondItem="JQj-ve-0Xc" secondAttribute="leading" id="iv2-bx-b3X"/>
                                             <constraint firstItem="G77-mE-wAo" firstAttribute="centerX" secondItem="JQj-ve-0Xc" secondAttribute="centerX" id="l6u-KA-t3w"/>
                                             <constraint firstAttribute="trailing" secondItem="Qa2-gm-T3C" secondAttribute="trailing" constant="20" id="mm1-oT-fMm"/>
                                             <constraint firstItem="Qa2-gm-T3C" firstAttribute="top" secondItem="JQj-ve-0Xc" secondAttribute="top" id="o8Q-3t-CSQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Rt-av-MYg" secondAttribute="trailing" id="vxX-sK-WuF"/>
+                                            <constraint firstItem="4Rt-av-MYg" firstAttribute="top" secondItem="JQj-ve-0Xc" secondAttribute="top" id="yIu-4N-Dtb"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -660,6 +680,36 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="JQj-ve-0Xc" secondAttribute="trailing" id="gWa-U4-JYB"/>
+                                    <constraint firstItem="JQj-ve-0Xc" firstAttribute="leading" secondItem="uVc-FX-GxV" secondAttribute="leading" id="hTj-mS-Kif"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TAW-IL-twI">
+                                <rect key="frame" x="99" y="423" width="216.5" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="09x-IQ-hIo">
+                                        <rect key="frame" x="0.0" y="13" width="25" height="24"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <imageReference key="image" image="safari" catalog="system" symbolScale="large"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsx-0Y-Ugd">
+                                        <rect key="frame" x="40" y="0.0" width="136.5" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Buy BTC">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buyBTC:" destination="9xP-H3-rax" eventType="touchUpInside" id="mhW-jh-UD4"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0tF-ym-Kf3">
+                                        <rect key="frame" x="191.5" y="13" width="25" height="24"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <imageReference key="image" image="safari" catalog="system" symbolScale="large"/>
+                                    </imageView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -669,7 +719,9 @@
                             <constraint firstItem="uVc-FX-GxV" firstAttribute="top" secondItem="wGN-rf-xsM" secondAttribute="top" constant="10" id="6NA-vm-nGh"/>
                             <constraint firstItem="Vkj-My-lV9" firstAttribute="trailing" secondItem="wGN-rf-xsM" secondAttribute="trailing" id="API-vd-QGz"/>
                             <constraint firstItem="Vkj-My-lV9" firstAttribute="bottom" secondItem="wGN-rf-xsM" secondAttribute="bottom" id="KrK-i8-Yr0"/>
+                            <constraint firstItem="TAW-IL-twI" firstAttribute="centerX" secondItem="2vp-kC-I2x" secondAttribute="centerX" id="Yfw-QS-QOG"/>
                             <constraint firstItem="uVc-FX-GxV" firstAttribute="leading" secondItem="2vp-kC-I2x" secondAttribute="leadingMargin" id="hz6-vH-9zL"/>
+                            <constraint firstItem="TAW-IL-twI" firstAttribute="centerY" secondItem="2vp-kC-I2x" secondAttribute="centerY" id="jNp-mh-AYP"/>
                             <constraint firstItem="uVc-FX-GxV" firstAttribute="trailing" secondItem="2vp-kC-I2x" secondAttribute="trailingMargin" id="ln6-dc-E0m"/>
                             <constraint firstItem="Vkj-My-lV9" firstAttribute="leading" secondItem="wGN-rf-xsM" secondAttribute="leading" id="sU1-37-WoK"/>
                         </constraints>
@@ -677,6 +729,10 @@
                     <navigationItem key="navigationItem" title="Invest" id="DY9-Ne-piZ"/>
                     <connections>
                         <outlet property="bitcoinLabel" destination="G77-mE-wAo" id="WII-ga-LI5"/>
+                        <outlet property="bitcoinView" destination="Qa2-gm-T3C" id="6o2-Yg-rkS"/>
+                        <outlet property="buyView" destination="TAW-IL-twI" id="gNY-hv-KG3"/>
+                        <outlet property="chooseCurrency" destination="6pK-8Q-611" id="hYK-bo-PxF"/>
+                        <outlet property="chooseText" destination="4Rt-av-MYg" id="mFl-0I-6Hw"/>
                         <outlet property="currencyLabel" destination="lOc-Ce-9Fb" id="Qli-eX-Q3x"/>
                         <outlet property="currencyPicker" destination="Vkj-My-lV9" id="Cqb-cB-kGA"/>
                     </connections>
@@ -1734,6 +1790,7 @@
         <image name="Spendings" width="500" height="500"/>
         <image name="Split" width="500" height="500"/>
         <image name="bitcoinsign.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="safari" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

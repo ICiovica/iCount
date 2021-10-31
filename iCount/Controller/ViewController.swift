@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class ViewController: UIViewController {
     
-   lazy var gradient: CAGradientLayer = {
+    @IBOutlet var dateLabel: CLTypingLabel!
+    
+    lazy var gradient: CAGradientLayer = {
         let gradient = CAGradientLayer()
         gradient.type = .axial
         gradient.colors = [
@@ -22,6 +25,17 @@ class ViewController: UIViewController {
         return gradient
     }()
     
+     let dueDateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+         formatter.dateStyle = .full
+        return formatter
+    }()
+    
+    var timer = Timer()
+    var currentDate = DateFormatter()
+    var date = Date()
+    var timeInterval = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +44,15 @@ class ViewController: UIViewController {
         gradient.startPoint = CGPoint(x: 0, y: 1)
         gradient.endPoint = CGPoint(x: 0, y: 0)
         view.layer.addSublayer(gradient)
+        
+        timer = Timer.scheduledTimer(timeInterval: 0.75, target: self, selector: #selector(rollDate), userInfo: nil, repeats: false)
+        
+        dateLabel.textColor = .clear
+    }
+    
+   @objc func rollDate() {
+       dateLabel.textColor = .white
+       dateLabel.text = dueDateFormatter.string(from: date)
     }
     
     @IBAction func goToHome(_ sender: UITapGestureRecognizer) {

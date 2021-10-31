@@ -19,20 +19,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1gg-hx-m64">
                                 <rect key="frame" x="0.0" y="88" width="414" height="754"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vqy-Z9-Vev">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vqy-Z9-Vev">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wsK-Yj-BXD">
-                                                <rect key="frame" x="0.0" y="51.5" width="414" height="105"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wsK-Yj-BXD">
+                                                <rect key="frame" x="0.0" y="24.5" width="414" height="159"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday 31 October 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOa-Z1-qne">
-                                                        <rect key="frame" x="122.5" y="0.0" width="169" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday 31 October 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOa-Z1-qne" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                                                        <rect key="frame" x="99" y="0.0" width="216.5" height="72"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRB-Zf-Ha1">
-                                                        <rect key="frame" x="118" y="33" width="178" height="72"/>
+                                                        <rect key="frame" x="118" y="87" width="178" height="72"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="60"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -423,6 +423,7 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="XVP-zg-6lN"/>
                     <connections>
+                        <outlet property="dateLabel" destination="NOa-Z1-qne" id="Z1i-Nf-wok"/>
                         <segue destination="QNZ-Aj-FcZ" kind="show" identifier="Settings" id="6K7-og-x4X"/>
                         <segue destination="QVq-T9-Ad1" kind="show" identifier="Badges" id="Pbj-ZK-Q2O"/>
                         <segue destination="R6i-yp-S12" kind="show" identifier="Goals" id="XWI-Jo-OLf"/>

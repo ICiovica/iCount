@@ -17,90 +17,137 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1gg-hx-m64">
-                                <rect key="frame" x="20" y="108" width="374" height="733.5"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="754"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vqy-Z9-Vev">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="208"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRB-Zf-Ha1">
-                                                <rect key="frame" x="0.0" y="61" width="374" height="86"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="72"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wsK-Yj-BXD">
+                                                <rect key="frame" x="0.0" y="51.5" width="414" height="105"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday 31 October 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOa-Z1-qne">
+                                                        <rect key="frame" x="122.5" y="0.0" width="169" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRB-Zf-Ha1">
+                                                        <rect key="frame" x="118" y="33" width="178" height="72"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="60"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VSi-cH-5fS">
-                                        <rect key="frame" x="0.0" y="228" width="374" height="505.5"/>
+                                        <rect key="frame" x="0.0" y="228" width="414" height="526"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0yO-w5-ZR9">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="111.5"/>
+                                                <rect key="frame" x="35" y="0.0" width="344.5" height="116.5"/>
                                                 <subviews>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Home" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="hXr-d6-x50">
-                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="111.5"/>
-                                                        <color key="tintColor" red="1" green="0.31764705882352939" blue="0.31764705882352939" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
-                                                        <gestureRecognizers/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gT0-G0-6qT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="101.5" height="116.5"/>
+                                                        <subviews>
+                                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Home" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="hXr-d6-x50">
+                                                                <rect key="frame" x="0.0" y="0.0" width="101.5" height="101.5"/>
+                                                                <color key="tintColor" red="1" green="0.31764705882352939" blue="0.31764705882352939" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                                                <gestureRecognizers/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="hXr-d6-x50" secondAttribute="height" multiplier="1:1" id="nhv-jw-CrI"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                        <real key="value" value="0.25"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                                        <size key="value" width="5" height="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="kkf-8B-4Y0" appends="YES" id="TID-Sl-XyY"/>
+                                                                </connections>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Home" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WXs-Wa-Oon">
+                                                                <rect key="frame" x="0.0" y="116.5" width="101.5" height="0.0"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" secondItem="hXr-d6-x50" secondAttribute="height" multiplier="1:1" id="nhv-jw-CrI"/>
+                                                            <constraint firstAttribute="bottom" secondItem="WXs-Wa-Oon" secondAttribute="bottom" id="6fo-iY-tmB"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                                <real key="value" value="0.25"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                                <size key="value" width="5" height="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="kkf-8B-4Y0" appends="YES" id="TID-Sl-XyY"/>
-                                                        </connections>
-                                                    </imageView>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Reminder" image="Reminder" translatesAutoresizingMaskIntoConstraints="NO" id="YCA-4o-Eag">
-                                                        <rect key="frame" x="131.5" y="0.0" width="111" height="111.5"/>
-                                                        <gestureRecognizers/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="YCA-4o-Eag" secondAttribute="height" multiplier="1:1" id="dCU-yI-i68"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                                <real key="value" value="0.25"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                                <size key="value" width="5" height="15"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="MtD-bR-BNj" appends="YES" id="oyl-q9-PRP"/>
-                                                        </connections>
-                                                    </imageView>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Birthday" image="Birthday" translatesAutoresizingMaskIntoConstraints="NO" id="toY-nt-9jX">
-                                                        <rect key="frame" x="262.5" y="0.0" width="111.5" height="111.5"/>
-                                                        <gestureRecognizers/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="toY-nt-9jX" secondAttribute="height" multiplier="1:1" id="7z1-mm-l7r"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="Sjd-IR-Mjq" appends="YES" id="cdi-fs-QbF"/>
-                                                        </connections>
-                                                    </imageView>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6Hq-OU-apW">
+                                                        <rect key="frame" x="121.5" y="0.0" width="101.5" height="116.5"/>
+                                                        <subviews>
+                                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Reminder" image="Reminder" translatesAutoresizingMaskIntoConstraints="NO" id="YCA-4o-Eag">
+                                                                <rect key="frame" x="0.0" y="0.0" width="101.5" height="101.5"/>
+                                                                <gestureRecognizers/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="YCA-4o-Eag" secondAttribute="height" multiplier="1:1" id="dCU-yI-i68"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                        <real key="value" value="0.25"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                                        <size key="value" width="5" height="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="MtD-bR-BNj" appends="YES" id="oyl-q9-PRP"/>
+                                                                </connections>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Reminder" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K5t-xh-J4e">
+                                                                <rect key="frame" x="0.0" y="116.5" width="101.5" height="0.0"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8WO-rc-TmT">
+                                                        <rect key="frame" x="243" y="0.0" width="101.5" height="116.5"/>
+                                                        <subviews>
+                                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Birthday" image="Birthday" translatesAutoresizingMaskIntoConstraints="NO" id="toY-nt-9jX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="101.5" height="101.5"/>
+                                                                <gestureRecognizers/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="toY-nt-9jX" secondAttribute="height" multiplier="1:1" id="7z1-mm-l7r"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="Sjd-IR-Mjq" appends="YES" id="cdi-fs-QbF"/>
+                                                                </connections>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Birthday" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IfB-yw-dYg">
+                                                                <rect key="frame" x="0.0" y="116.5" width="101.5" height="0.0"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -109,153 +156,252 @@
                                                 </userDefinedRuntimeAttributes>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UxY-SL-kBi">
-                                                <rect key="frame" x="0.0" y="131.5" width="374" height="111.5"/>
+                                                <rect key="frame" x="35" y="136.5" width="344.5" height="116.5"/>
                                                 <subviews>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Calculator" image="Calculator" translatesAutoresizingMaskIntoConstraints="NO" id="hZc-sA-Fqs">
-                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="111"/>
-                                                        <gestureRecognizers/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="hZc-sA-Fqs" secondAttribute="height" multiplier="1:1" id="n7B-Fa-efv"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="b1H-Hd-Ed1" appends="YES" id="ftF-dV-eeo"/>
-                                                        </connections>
-                                                    </imageView>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Split" image="Split" translatesAutoresizingMaskIntoConstraints="NO" id="HQK-gd-lIW">
-                                                        <rect key="frame" x="131.5" y="0.0" width="111" height="111"/>
-                                                        <gestureRecognizers/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="HQK-gd-lIW" secondAttribute="height" multiplier="1:1" id="bwM-QJ-GHT"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="JLQ-lz-Vxv" appends="YES" id="h2y-MD-UoF"/>
-                                                        </connections>
-                                                    </imageView>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Converter" image="Converter" translatesAutoresizingMaskIntoConstraints="NO" id="beo-wI-Z0u">
-                                                        <rect key="frame" x="262.5" y="0.0" width="111.5" height="111"/>
-                                                        <gestureRecognizers/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="beo-wI-Z0u" secondAttribute="height" multiplier="1:1" id="YMc-6R-0O5"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="PeX-l5-KQD" appends="YES" id="fJw-wf-Pdl"/>
-                                                        </connections>
-                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qvp-He-WIv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="101.5" height="116.5"/>
+                                                        <subviews>
+                                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Calculator" image="Calculator" translatesAutoresizingMaskIntoConstraints="NO" id="hZc-sA-Fqs">
+                                                                <rect key="frame" x="0.0" y="0.0" width="101.5" height="101.5"/>
+                                                                <gestureRecognizers/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="hZc-sA-Fqs" secondAttribute="height" multiplier="1:1" id="n7B-Fa-efv"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="b1H-Hd-Ed1" appends="YES" id="ftF-dV-eeo"/>
+                                                                </connections>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Calculator" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DZ1-yU-n7F">
+                                                                <rect key="frame" x="0.0" y="116.5" width="101.5" height="0.0"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uJ2-Gz-YQl">
+                                                        <rect key="frame" x="121.5" y="0.0" width="101.5" height="116.5"/>
+                                                        <subviews>
+                                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Split" image="Split" translatesAutoresizingMaskIntoConstraints="NO" id="HQK-gd-lIW">
+                                                                <rect key="frame" x="0.0" y="0.0" width="101.5" height="101.5"/>
+                                                                <gestureRecognizers/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="HQK-gd-lIW" secondAttribute="height" multiplier="1:1" id="bwM-QJ-GHT"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="JLQ-lz-Vxv" appends="YES" id="h2y-MD-UoF"/>
+                                                                </connections>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Split" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fjZ-yx-gi7">
+                                                                <rect key="frame" x="0.0" y="116.5" width="101.5" height="0.0"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Y1y-6i-aiT">
+                                                        <rect key="frame" x="243" y="0.0" width="101.5" height="116.5"/>
+                                                        <subviews>
+                                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Converter" image="Converter" translatesAutoresizingMaskIntoConstraints="NO" id="beo-wI-Z0u">
+                                                                <rect key="frame" x="0.0" y="0.0" width="101.5" height="101.5"/>
+                                                                <gestureRecognizers/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="beo-wI-Z0u" secondAttribute="height" multiplier="1:1" id="YMc-6R-0O5"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="PeX-l5-KQD" appends="YES" id="fJw-wf-Pdl"/>
+                                                                </connections>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Converter" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wxa-LO-PM9">
+                                                                <rect key="frame" x="0.0" y="116.5" width="101.5" height="0.0"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7iX-fd-qNw">
-                                                <rect key="frame" x="0.0" y="263" width="374" height="111"/>
+                                                <rect key="frame" x="35" y="273" width="344.5" height="116.5"/>
                                                 <subviews>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Spendings" image="Spendings" translatesAutoresizingMaskIntoConstraints="NO" id="enR-Vv-ISe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="111"/>
-                                                        <gestureRecognizers/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="enR-Vv-ISe" secondAttribute="height" multiplier="1:1" id="R6k-jY-r3u"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="h2l-zG-SPl" appends="YES" id="3pQ-Yy-1Na"/>
-                                                        </connections>
-                                                    </imageView>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Savings" image="Savings" translatesAutoresizingMaskIntoConstraints="NO" id="W1S-2s-oH6">
-                                                        <rect key="frame" x="131.5" y="0.0" width="111" height="111"/>
-                                                        <gestureRecognizers/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="W1S-2s-oH6" secondAttribute="height" multiplier="1:1" id="AjX-JQ-3OC"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="tKJ-1e-Vj0" appends="YES" id="mFv-Dz-f8k"/>
-                                                        </connections>
-                                                    </imageView>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Invest" image="Invest" translatesAutoresizingMaskIntoConstraints="NO" id="fRH-XS-2xI">
-                                                        <rect key="frame" x="262.5" y="0.0" width="111.5" height="111"/>
-                                                        <gestureRecognizers/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="fRH-XS-2xI" secondAttribute="height" multiplier="1:1" id="dgM-AR-jg8"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="dn5-tZ-bVG" appends="YES" id="RJQ-9p-D6C"/>
-                                                        </connections>
-                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0kX-hi-7aN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="101.5" height="116.5"/>
+                                                        <subviews>
+                                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Spendings" image="Spendings" translatesAutoresizingMaskIntoConstraints="NO" id="enR-Vv-ISe">
+                                                                <rect key="frame" x="0.0" y="0.0" width="101.5" height="101.5"/>
+                                                                <gestureRecognizers/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="enR-Vv-ISe" secondAttribute="height" multiplier="1:1" id="R6k-jY-r3u"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="h2l-zG-SPl" appends="YES" id="3pQ-Yy-1Na"/>
+                                                                </connections>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bills" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cSS-1A-HQp">
+                                                                <rect key="frame" x="0.0" y="116.5" width="101.5" height="0.0"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8Ug-an-e1r">
+                                                        <rect key="frame" x="121.5" y="0.0" width="101.5" height="116.5"/>
+                                                        <subviews>
+                                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Savings" image="Savings" translatesAutoresizingMaskIntoConstraints="NO" id="W1S-2s-oH6">
+                                                                <rect key="frame" x="0.0" y="0.0" width="101.5" height="101.5"/>
+                                                                <gestureRecognizers/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="W1S-2s-oH6" secondAttribute="height" multiplier="1:1" id="AjX-JQ-3OC"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="tKJ-1e-Vj0" appends="YES" id="mFv-Dz-f8k"/>
+                                                                </connections>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Savings" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iho-5L-GO3">
+                                                                <rect key="frame" x="0.0" y="116.5" width="101.5" height="0.0"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oTr-C9-2y2">
+                                                        <rect key="frame" x="243" y="0.0" width="101.5" height="116.5"/>
+                                                        <subviews>
+                                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Invest" image="Invest" translatesAutoresizingMaskIntoConstraints="NO" id="fRH-XS-2xI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="101.5" height="101.5"/>
+                                                                <gestureRecognizers/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="fRH-XS-2xI" secondAttribute="height" multiplier="1:1" id="dgM-AR-jg8"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="dn5-tZ-bVG" appends="YES" id="RJQ-9p-D6C"/>
+                                                                </connections>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Crypto" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYN-cS-ELf">
+                                                                <rect key="frame" x="0.0" y="116.5" width="101.5" height="0.0"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UfM-qS-s8q">
-                                                <rect key="frame" x="0.0" y="394" width="374" height="111.5"/>
+                                                <rect key="frame" x="35" y="409.5" width="344.5" height="116.5"/>
                                                 <subviews>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Goals" image="Goals" translatesAutoresizingMaskIntoConstraints="NO" id="vze-pR-bLg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="111.5"/>
-                                                        <gestureRecognizers/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="vze-pR-bLg" secondAttribute="height" multiplier="1:1" id="Xm6-Yc-KF9"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="NMA-Wg-NIU" appends="YES" id="1Is-WX-gtD"/>
-                                                        </connections>
-                                                    </imageView>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Badges" image="Badges" translatesAutoresizingMaskIntoConstraints="NO" id="2B6-xF-po7">
-                                                        <rect key="frame" x="131.5" y="0.0" width="111" height="111.5"/>
-                                                        <gestureRecognizers/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="2B6-xF-po7" secondAttribute="height" multiplier="1:1" id="Yl1-Ur-LvL"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="s1u-LS-WG5" appends="YES" id="8cu-eM-cmj"/>
-                                                        </connections>
-                                                    </imageView>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Settings" image="Settings" translatesAutoresizingMaskIntoConstraints="NO" id="3xW-JB-x5C">
-                                                        <rect key="frame" x="262.5" y="0.0" width="111.5" height="111.5"/>
-                                                        <gestureRecognizers/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="3xW-JB-x5C" secondAttribute="height" multiplier="1:1" id="JcK-5V-FU8"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="rpL-Eo-zLu" appends="YES" id="oek-mc-z89"/>
-                                                        </connections>
-                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="B7Y-GY-d3F">
+                                                        <rect key="frame" x="0.0" y="0.0" width="101.5" height="116.5"/>
+                                                        <subviews>
+                                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Badges" image="Badges" translatesAutoresizingMaskIntoConstraints="NO" id="2B6-xF-po7">
+                                                                <rect key="frame" x="0.0" y="0.0" width="101.5" height="101.5"/>
+                                                                <gestureRecognizers/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="2B6-xF-po7" secondAttribute="height" multiplier="1:1" id="Yl1-Ur-LvL"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="s1u-LS-WG5" appends="YES" id="8cu-eM-cmj"/>
+                                                                </connections>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Badges" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ypt-WM-Ndx">
+                                                                <rect key="frame" x="0.0" y="116.5" width="101.5" height="0.0"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="aua-fR-eac">
+                                                        <rect key="frame" x="121.5" y="0.0" width="101.5" height="116.5"/>
+                                                        <subviews>
+                                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Goals" image="Goals" translatesAutoresizingMaskIntoConstraints="NO" id="vze-pR-bLg">
+                                                                <rect key="frame" x="0.0" y="0.0" width="101.5" height="101.5"/>
+                                                                <gestureRecognizers/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="vze-pR-bLg" secondAttribute="height" multiplier="1:1" id="Xm6-Yc-KF9"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="NMA-Wg-NIU" appends="YES" id="1Is-WX-gtD"/>
+                                                                </connections>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Goals" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K4u-6j-yYQ">
+                                                                <rect key="frame" x="0.0" y="116.5" width="101.5" height="0.0"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lbK-hl-Xxr">
+                                                        <rect key="frame" x="243" y="0.0" width="101.5" height="116.5"/>
+                                                        <subviews>
+                                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Settings" image="Settings" translatesAutoresizingMaskIntoConstraints="NO" id="3xW-JB-x5C">
+                                                                <rect key="frame" x="0.0" y="0.0" width="101.5" height="101.5"/>
+                                                                <gestureRecognizers/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="3xW-JB-x5C" secondAttribute="height" multiplier="1:1" id="JcK-5V-FU8"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="rpL-Eo-zLu" appends="YES" id="oek-mc-z89"/>
+                                                                </connections>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Settings" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AmW-Sp-tyc">
+                                                                <rect key="frame" x="0.0" y="116.5" width="101.5" height="0.0"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -269,11 +415,10 @@
                         <viewLayoutGuide key="safeArea" id="6Q6-ZV-Yxv"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Q6-ZV-Yxv" firstAttribute="bottom" secondItem="1gg-hx-m64" secondAttribute="bottom" constant="20.5" id="26P-l1-EAp"/>
-                            <constraint firstItem="1gg-hx-m64" firstAttribute="leading" secondItem="6Q6-ZV-Yxv" secondAttribute="leading" constant="20" id="cyh-Ct-e2D"/>
-                            <constraint firstItem="1gg-hx-m64" firstAttribute="top" secondItem="6Q6-ZV-Yxv" secondAttribute="top" constant="20" id="meC-ch-NN0"/>
-                            <constraint firstAttribute="trailing" secondItem="1gg-hx-m64" secondAttribute="trailing" constant="20" id="u8n-zP-7lN"/>
-                            <constraint firstItem="6Q6-ZV-Yxv" firstAttribute="trailing" secondItem="1gg-hx-m64" secondAttribute="trailing" constant="20" id="uBl-s1-Pcr"/>
+                            <constraint firstItem="6Q6-ZV-Yxv" firstAttribute="bottom" secondItem="1gg-hx-m64" secondAttribute="bottom" constant="20" id="26P-l1-EAp"/>
+                            <constraint firstItem="1gg-hx-m64" firstAttribute="leading" secondItem="6Q6-ZV-Yxv" secondAttribute="leading" id="cyh-Ct-e2D"/>
+                            <constraint firstItem="1gg-hx-m64" firstAttribute="top" secondItem="6Q6-ZV-Yxv" secondAttribute="top" id="meC-ch-NN0"/>
+                            <constraint firstAttribute="trailing" secondItem="1gg-hx-m64" secondAttribute="trailing" id="u8n-zP-7lN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="XVP-zg-6lN"/>

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AAF7DF0BAD6380A94A5EDE10 /* Pods_iCount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE365C8DCE8BF22B378B8C1A /* Pods_iCount.framework */; };
+		AC1C2009273077AF0016AB0B /* ExchangeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C2008273077AF0016AB0B /* ExchangeData.swift */; };
+		AC1C200B273077BC0016AB0B /* ExchangeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C200A273077BC0016AB0B /* ExchangeManager.swift */; };
+		AC1C200E2730993D0016AB0B /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C200D2730993D0016AB0B /* ExchangeViewController.swift */; };
 		AC40B1A32729FC6300A4D0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1A22729FC6300A4D0D3 /* AppDelegate.swift */; };
 		AC40B1A52729FC6300A4D0D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1A42729FC6300A4D0D3 /* SceneDelegate.swift */; };
 		AC40B1AA2729FC6300A4D0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC40B1A82729FC6300A4D0D3 /* Main.storyboard */; };
@@ -21,7 +24,6 @@
 		AC40B1C7272AC39900A4D0D3 /* InvestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1C6272AC39900A4D0D3 /* InvestViewController.swift */; };
 		AC40B1C9272AC3A300A4D0D3 /* SavingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1C8272AC3A300A4D0D3 /* SavingsViewController.swift */; };
 		AC40B1CB272AC43D00A4D0D3 /* SpendingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1CA272AC43D00A4D0D3 /* SpendingsViewController.swift */; };
-		AC40B1CD272AC44B00A4D0D3 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1CC272AC44B00A4D0D3 /* ConverterViewController.swift */; };
 		AC40B1CF272AC45800A4D0D3 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1CE272AC45800A4D0D3 /* SplitViewController.swift */; };
 		AC40B1D1272AC46300A4D0D3 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1D0272AC46300A4D0D3 /* CalculatorViewController.swift */; };
 		AC40B1D3272AC47D00A4D0D3 /* BirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1D2272AC47D00A4D0D3 /* BirthdayViewController.swift */; };
@@ -41,6 +43,9 @@
 /* Begin PBXFileReference section */
 		50EB50D54E5FD40C46B586A2 /* Pods-iCount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCount.debug.xcconfig"; path = "Target Support Files/Pods-iCount/Pods-iCount.debug.xcconfig"; sourceTree = "<group>"; };
 		5B2866B3BBF5AD85FA294C9C /* Pods-iCount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCount.release.xcconfig"; path = "Target Support Files/Pods-iCount/Pods-iCount.release.xcconfig"; sourceTree = "<group>"; };
+		AC1C2008273077AF0016AB0B /* ExchangeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeData.swift; sourceTree = "<group>"; };
+		AC1C200A273077BC0016AB0B /* ExchangeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeManager.swift; sourceTree = "<group>"; };
+		AC1C200D2730993D0016AB0B /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
 		AC40B19F2729FC6300A4D0D3 /* iCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC40B1A22729FC6300A4D0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC40B1A42729FC6300A4D0D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +61,6 @@
 		AC40B1C6272AC39900A4D0D3 /* InvestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestViewController.swift; sourceTree = "<group>"; };
 		AC40B1C8272AC3A300A4D0D3 /* SavingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsViewController.swift; sourceTree = "<group>"; };
 		AC40B1CA272AC43D00A4D0D3 /* SpendingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsViewController.swift; sourceTree = "<group>"; };
-		AC40B1CC272AC44B00A4D0D3 /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 		AC40B1CE272AC45800A4D0D3 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		AC40B1D0272AC46300A4D0D3 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		AC40B1D2272AC47D00A4D0D3 /* BirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewController.swift; sourceTree = "<group>"; };
@@ -92,7 +96,6 @@
 				50EB50D54E5FD40C46B586A2 /* Pods-iCount.debug.xcconfig */,
 				5B2866B3BBF5AD85FA294C9C /* Pods-iCount.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -102,6 +105,15 @@
 				CE365C8DCE8BF22B378B8C1A /* Pods_iCount.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC1C200C273077C30016AB0B /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				AC1C2008273077AF0016AB0B /* ExchangeData.swift */,
+				AC1C200A273077BC0016AB0B /* ExchangeManager.swift */,
+			);
+			path = Exchange;
 			sourceTree = "<group>";
 		};
 		AC40B1962729FC6300A4D0D3 = {
@@ -157,7 +169,7 @@
 				AC40B1E5272B372300A4D0D3 /* Converter */,
 				AC40B1E4272B371C00A4D0D3 /* Spendings */,
 				AC40B1E3272B371500A4D0D3 /* Savings */,
-				AC40B1E2272B370E00A4D0D3 /* Invest */,
+				AC40B1E2272B370E00A4D0D3 /* Crypto */,
 				AC40B1E1272B370700A4D0D3 /* Goals */,
 				AC40B1E0272B36FD00A4D0D3 /* Badges */,
 				AC40B1DF272B36F500A4D0D3 /* Settings */,
@@ -169,7 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				AC40B1BE272AB20200A4D0D3 /* Extensions.swift */,
-				AC77C7E7272D73F1003B1E00 /* Invest */,
+				AC1C200C273077C30016AB0B /* Exchange */,
+				AC77C7E7272D73F1003B1E00 /* Crypto */,
 				AC40B1EB272B376400A4D0D3 /* Reminder */,
 				AC963A22272C2F6900898BEB /* Calculator */,
 			);
@@ -200,12 +213,12 @@
 			path = Goals;
 			sourceTree = "<group>";
 		};
-		AC40B1E2272B370E00A4D0D3 /* Invest */ = {
+		AC40B1E2272B370E00A4D0D3 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
 				AC40B1C6272AC39900A4D0D3 /* InvestViewController.swift */,
 			);
-			path = Invest;
+			path = Crypto;
 			sourceTree = "<group>";
 		};
 		AC40B1E3272B371500A4D0D3 /* Savings */ = {
@@ -227,7 +240,7 @@
 		AC40B1E5272B372300A4D0D3 /* Converter */ = {
 			isa = PBXGroup;
 			children = (
-				AC40B1CC272AC44B00A4D0D3 /* ConverterViewController.swift */,
+				AC1C200D2730993D0016AB0B /* ExchangeViewController.swift */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -285,13 +298,13 @@
 			path = Reminder;
 			sourceTree = "<group>";
 		};
-		AC77C7E7272D73F1003B1E00 /* Invest */ = {
+		AC77C7E7272D73F1003B1E00 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
 				AC77C7E5272D73D9003B1E00 /* CoinManager.swift */,
 				AC77C7E3272D73BD003B1E00 /* CoinData.swift */,
 			);
-			name = Invest;
+			name = Crypto;
 			sourceTree = "<group>";
 		};
 		AC963A22272C2F6900898BEB /* Calculator */ = {
@@ -421,6 +434,7 @@
 				AC40B1C9272AC3A300A4D0D3 /* SavingsViewController.swift in Sources */,
 				AC963A24272C384100898BEB /* ResultsViewController.swift in Sources */,
 				AC40B1DC272B362E00A4D0D3 /* Group.swift in Sources */,
+				AC1C2009273077AF0016AB0B /* ExchangeData.swift in Sources */,
 				AC40B1F1272B3EB100A4D0D3 /* AlarmViewController.swift in Sources */,
 				AC40B1C5272AC37D00A4D0D3 /* GoalsViewController.swift in Sources */,
 				AC40B1D5272AC49B00A4D0D3 /* ReminderViewController.swift in Sources */,
@@ -434,10 +448,11 @@
 				AC40B1A52729FC6300A4D0D3 /* SceneDelegate.swift in Sources */,
 				AC40B1C1272AB55C00A4D0D3 /* SettingsViewController.swift in Sources */,
 				AC40B1C7272AC39900A4D0D3 /* InvestViewController.swift in Sources */,
-				AC40B1CD272AC44B00A4D0D3 /* ConverterViewController.swift in Sources */,
+				AC1C200B273077BC0016AB0B /* ExchangeManager.swift in Sources */,
 				AC40B1DE272B365800A4D0D3 /* Alarm.swift in Sources */,
 				AC40B1C3272AC33E00A4D0D3 /* BadgesViewController.swift in Sources */,
 				AC40B1D7272AC4A600A4D0D3 /* HomeViewController.swift in Sources */,
+				AC1C200E2730993D0016AB0B /* ExchangeViewController.swift in Sources */,
 				AC40B1D1272AC46300A4D0D3 /* CalculatorViewController.swift in Sources */,
 				AC40B1BF272AB20200A4D0D3 /* Extensions.swift in Sources */,
 				AC40B1CF272AC45800A4D0D3 /* SplitViewController.swift in Sources */,

@@ -13,13 +13,9 @@ class InvestViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet var currencyLabel: UILabel!
     @IBOutlet var bitcoinLabel: CLTypingLabel!
     @IBOutlet var currencyPicker: UIPickerView!
-
     @IBOutlet var bitcoinView: UIStackView!
-    
     @IBOutlet var chooseCurrency: UIView!
-    
     @IBOutlet var chooseText: UITextField!
-    
     @IBOutlet var buyView: UIStackView!
     
     var coinManager = CoinManager()
@@ -53,7 +49,6 @@ class InvestViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         bitcoinLabel.adjustsFontSizeToFitWidth = true
         
         bitcoinView.isHidden = true
-        buyView.isHidden = true
     }
     
     @IBAction func buyBTC(_ sender: UIButton) {
@@ -81,8 +76,6 @@ class InvestViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         currencyLabel.text = selectedCurrency
         coinManager.getCoinPrice(for: selectedCurrency)
         bitcoinView.isHidden = false
-        buyView.isHidden = false
-        
     }
 }
 

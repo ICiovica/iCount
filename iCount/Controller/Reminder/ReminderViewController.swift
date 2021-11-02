@@ -16,14 +16,13 @@ class ReminderViewController: UITableViewController, UNUserNotificationCenterDel
         super.viewDidLoad()
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addGroup))
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Reminders", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Reminder", style: .plain, target: nil, action: nil)
 
         NotificationCenter.default.addObserver(self, selector: #selector(save), name: Notification.Name("save"), object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
         // user might have changed this group, so we need to refresh
         // its content here
         load()
@@ -264,7 +263,6 @@ class ReminderViewController: UITableViewController, UNUserNotificationCenterDel
                 break
             }
         }
-
         save()
         load()
     }

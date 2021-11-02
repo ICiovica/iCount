@@ -33,6 +33,9 @@ class InvestViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
          return gradient
      }()
     
+    var currentDate = DateFormatter()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

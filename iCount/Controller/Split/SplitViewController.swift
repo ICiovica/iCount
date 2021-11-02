@@ -14,6 +14,7 @@ class SplitViewController: UIViewController {
     @IBOutlet var tenPctButton: UIButton!
     @IBOutlet var twuentyPctButton: UIButton!
     @IBOutlet var splitNumberLabel: UILabel!
+    @IBOutlet var calculateButton: UIButton!
     
     lazy var gradient: CAGradientLayer = {
          let gradient = CAGradientLayer()
@@ -28,7 +29,7 @@ class SplitViewController: UIViewController {
          return gradient
      }()
     
-    var tipSelected = 0.0
+    var tipSelected = 0.1
     var tipAmount: Double?
     var total: String?
     var numberOfPeople = 2
@@ -71,11 +72,21 @@ class SplitViewController: UIViewController {
     }
     
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
-       let value = Double(billTextField.text ?? "0.0")
         
-        tipAmount = (value! + value! * tipSelected) / Double(numberOfPeople)
+        if billTextField.text == "" {
+            let ac = UIAlertController(title: "Please enter your bill", message: nil, preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        } else {
+            guard let billText = billTextField.text else { return }
+            guard let value = Double(billText) else { return }
+             
+             tipAmount = (value + value * tipSelected) / Double(numberOfPeople)
+             
+             total = String(format: "%.2f", tipAmount ?? 0.0)
+        }
         
-        total = String(format: "%.2f", tipAmount ?? 0.0)
+
     }
     
     @IBAction func stepperTapped(_ sender: UIStepper) {

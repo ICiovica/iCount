@@ -6,9 +6,20 @@
 //
 
 import UIKit
+import AVFoundation
+import CLTypingLabel
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet var infoLabel: UILabel!
+    
+    @IBOutlet var imagePlayer: UIImageView!
+    
+    @IBOutlet var trackTitle: UILabel!
+    
+    var player: AVAudioPlayer?
+    var count = 0
+    
     lazy var gradient: CAGradientLayer = {
          let gradient = CAGradientLayer()
          gradient.type = .axial
@@ -30,5 +41,26 @@ class HomeViewController: UIViewController {
         gradient.startPoint = CGPoint(x: 0, y: 1)
         gradient.endPoint = CGPoint(x: 0, y: 0)
         view.layer.addSublayer(gradient)
+        
+        let url = Bundle.main.url(forResource: "iCountTrack", withExtension: "mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player?.play()
+        
+        infoLabel.text = "The app is designed to offer an all in one organizer for your daily basis activities (e.g., Calculator, Reminder, Split a bill, Bitcoin currency converter, Euro currency converter, and more).\n\nEnjoy!"
+        
+        infoLabel.adjustsFontSizeToFitWidth = true
+        trackTitle.adjustsFontSizeToFitWidth = true
+    }
+    
+    @IBAction func playPauseRegognizer(_ sender: UITapGestureRecognizer) {
+        count += 1
+        
+        if count % 2 == 0 {
+            imagePlayer.image = UIImage(systemName: "pause.fill")
+            player?.play()
+        } else {
+            imagePlayer.image = UIImage(systemName: "play.fill")
+            player?.pause()
+        }
     }
 }

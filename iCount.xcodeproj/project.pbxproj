@@ -38,6 +38,7 @@
 		AC77C7E6272D73D9003B1E00 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77C7E5272D73D9003B1E00 /* CoinManager.swift */; };
 		AC963A21272C2F5100898BEB /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC963A20272C2F5100898BEB /* CalculatorLogic.swift */; };
 		AC963A24272C384100898BEB /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC963A23272C384100898BEB /* ResultsViewController.swift */; };
+		ACBF2A992731452C00EA0974 /* iCountTrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACBF2A982731452C00EA0974 /* iCountTrack.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		AC77C7E5272D73D9003B1E00 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 		AC963A20272C2F5100898BEB /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
 		AC963A23272C384100898BEB /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		ACBF2A982731452C00EA0974 /* iCountTrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = iCountTrack.mp3; sourceTree = "<group>"; };
 		CE365C8DCE8BF22B378B8C1A /* Pods_iCount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iCount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 				AC40B1AB2729FC6500A4D0D3 /* Assets.xcassets */,
 				AC40B1AD2729FC6500A4D0D3 /* LaunchScreen.storyboard */,
 				AC40B1B02729FC6500A4D0D3 /* Info.plist */,
+				ACBF2A982731452C00EA0974 /* iCountTrack.mp3 */,
 			);
 			path = iCount;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACBF2A992731452C00EA0974 /* iCountTrack.mp3 in Resources */,
 				AC40B1AF2729FC6500A4D0D3 /* LaunchScreen.storyboard in Resources */,
 				AC40B1AC2729FC6500A4D0D3 /* Assets.xcassets in Resources */,
 				AC40B1AA2729FC6300A4D0D3 /* Main.storyboard in Resources */,

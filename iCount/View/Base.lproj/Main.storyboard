@@ -804,8 +804,8 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pka-Jw-kkC">
                                                         <rect key="frame" x="73.5" y="193.5" width="193.5" height="193.5"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pause.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DNT-q4-g9t">
-                                                                <rect key="frame" x="0.0" y="2" width="193.5" height="189.5"/>
+                                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DNT-q4-g9t">
+                                                                <rect key="frame" x="0.0" y="1.5" width="193.5" height="190"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <gestureRecognizers/>
                                                                 <constraints>
@@ -2013,7 +2013,6 @@
         <designable name="G77-mE-wAo"/>
         <designable name="NOa-Z1-qne"/>
         <designable name="Qfz-5k-Bge"/>
-        <designable name="qws-3n-D2r"/>
     </designables>
     <resources>
         <image name="Badges" width="500" height="500"/>
@@ -2030,7 +2029,7 @@
         <image name="Split" width="500" height="500"/>
         <image name="bitcoinsign.circle.fill" catalog="system" width="128" height="121"/>
         <image name="eurosign.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="pause.fill" catalog="system" width="116" height="128"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
         <image name="safari" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

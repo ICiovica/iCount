@@ -42,9 +42,7 @@ class HomeViewController: UIViewController {
         gradient.endPoint = CGPoint(x: 0, y: 0)
         view.layer.addSublayer(gradient)
         
-        let url = Bundle.main.url(forResource: "iCountTrack", withExtension: "mp3")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player?.play()
+
         
         infoLabel.text = "The app is designed to offer an all in one organizer for your daily basis activities (e.g., Calculator, Reminder, Split a bill, Bitcoin currency converter, Euro currency converter, and more).\n\nEnjoy!"
         
@@ -53,7 +51,9 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func playPauseRegognizer(_ sender: UITapGestureRecognizer) {
-        count += 1
+        
+        let url = Bundle.main.url(forResource: "iCountTrack", withExtension: "mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
         
         if count % 2 == 0 {
             imagePlayer.image = UIImage(systemName: "pause.fill")
@@ -62,5 +62,7 @@ class HomeViewController: UIViewController {
             imagePlayer.image = UIImage(systemName: "play.fill")
             player?.pause()
         }
+        
+        count += 1
     }
 }

@@ -24,7 +24,6 @@ class SettingsViewController: UIViewController {
         return gradient
     }()
     
-    
     let baseShape = CAShapeLayer()
     let redShape = CAShapeLayer()
     let yellowShape = CAShapeLayer()
@@ -77,11 +76,10 @@ class SettingsViewController: UIViewController {
         blueShape.strokeEnd = 0
         view.layer.addSublayer(blueShape)
         
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.animateRed), userInfo: nil, repeats: true)
-            self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.animateYellow), userInfo: nil, repeats: true)
-            self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.animateBlue), userInfo: nil, repeats: true)
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            self.timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(self.animateRed), userInfo: nil, repeats: true)
+            self.timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(self.animateYellow), userInfo: nil, repeats: true)
+            self.timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(self.animateBlue), userInfo: nil, repeats: true)
         }
     }
     
@@ -93,7 +91,7 @@ class SettingsViewController: UIViewController {
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.toValue = 1
         animation.duration = 1
-        animation.isRemovedOnCompletion = true
+        animation.isRemovedOnCompletion = false
         animation.fillMode = .forwards
         self.redShape.add(animation, forKey: "animation")
     }
@@ -102,7 +100,7 @@ class SettingsViewController: UIViewController {
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.toValue = 1
         animation.duration = 1
-        animation.isRemovedOnCompletion = true
+        animation.isRemovedOnCompletion = false
         animation.fillMode = .forwards
         self.yellowShape.add(animation, forKey: "animation")
     }
@@ -110,7 +108,7 @@ class SettingsViewController: UIViewController {
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.toValue = 1
         animation.duration = 1
-        animation.isRemovedOnCompletion = true
+        animation.isRemovedOnCompletion = false
         animation.fillMode = .forwards
         self.blueShape.add(animation, forKey: "animation")
     }

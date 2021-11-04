@@ -11,6 +11,7 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet var img: UIImageView!
     
+    @IBOutlet var cityLabel: UILabel!
     lazy var gradient: CAGradientLayer = {
         let gradient = CAGradientLayer()
         gradient.type = .axial
@@ -33,6 +34,8 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        cityLabel.adjustsFontSizeToFitWidth = true
         
         gradient.frame = view.bounds
         gradient.zPosition = -10
@@ -76,9 +79,9 @@ class SettingsViewController: UIViewController {
         blueShape.strokeEnd = 0
         view.layer.addSublayer(blueShape)
         
-            self.timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(self.animateRed), userInfo: nil, repeats: true)
-            self.timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(self.animateYellow), userInfo: nil, repeats: true)
-            self.timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(self.animateBlue), userInfo: nil, repeats: true)
+            self.timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.animateRed), userInfo: nil, repeats: true)
+            self.timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.animateYellow), userInfo: nil, repeats: true)
+            self.timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.animateBlue), userInfo: nil, repeats: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -109,6 +112,24 @@ class SettingsViewController: UIViewController {
         animation.isRemovedOnCompletion = false
         animation.fillMode = .forwards
         self.blueShape.add(animation, forKey: "animation")
+    }
+    
+    @IBAction func goToLinkedin(_ sender: UIButton) {
+        if let url = URL(string: "https://www.linkedin.com/in/ionut-ciovica-335ab9149/") {
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    @IBAction func goToGitHub(_ sender: UIButton) {
+        if let url = URL(string: "https://github.com/ICiovica") {
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    @IBAction func goToTwitter(_ sender: UIButton) {
+        if let url = URL(string: "https://twitter.com/IonutCiovica") {
+            UIApplication.shared.open(url)
+        }
     }
 }
 

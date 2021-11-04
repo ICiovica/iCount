@@ -76,11 +76,9 @@ class SettingsViewController: UIViewController {
         blueShape.strokeEnd = 0
         view.layer.addSublayer(blueShape)
         
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
             self.timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(self.animateRed), userInfo: nil, repeats: true)
             self.timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(self.animateYellow), userInfo: nil, repeats: true)
             self.timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(self.animateBlue), userInfo: nil, repeats: true)
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

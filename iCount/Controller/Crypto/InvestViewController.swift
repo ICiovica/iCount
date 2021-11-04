@@ -83,6 +83,10 @@ class InvestViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         currencyLabel.text = selectedCurrency
         coinManager.getCoinPrice(for: selectedCurrency)
         bitcoinView.isHidden = false
+        
+        if bitcoinLabel.text == "" {
+            bitcoinLabel.text = "Too many requests"
+        }
     }
 }
 

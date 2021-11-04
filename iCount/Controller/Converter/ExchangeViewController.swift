@@ -79,6 +79,10 @@ class ExchangeViewController: UIViewController, UIPickerViewDataSource, UIPicker
         currencyLabel.text = selectedCurrency
         coinManager.getCoinPrice(for: selectedCurrency, position: position)
         
+        if coinLabel.text == "" {
+            coinLabel.text = "Too many requests"
+        }
+        
         coinView.isHidden = false
     }
     @IBAction func howToBuyEuros(_ sender: UIButton) {

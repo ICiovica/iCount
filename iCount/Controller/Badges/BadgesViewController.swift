@@ -4,7 +4,6 @@
 //
 //  Created by Ionut Ciovica on 28/10/2021.
 //
-
 import UIKit
 
 class BadgesViewController: UIViewController {
@@ -30,5 +29,9 @@ class BadgesViewController: UIViewController {
         gradient.startPoint = CGPoint(x: 0, y: 1)
         gradient.endPoint = CGPoint(x: 0, y: 0)
         view.layer.addSublayer(gradient)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
     }
 }

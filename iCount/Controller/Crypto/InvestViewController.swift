@@ -54,6 +54,10 @@ class InvestViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         bitcoinView.isHidden = true
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
+    }
+    
     @IBAction func buyBTC(_ sender: UIButton) {
         if let url = URL(string: "https://bitcoin.org/en/buy") {
             UIApplication.shared.open(url)

@@ -53,6 +53,10 @@ class ExchangeViewController: UIViewController, UIPickerViewDataSource, UIPicker
         coinView.isHidden = true
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
+    }
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }

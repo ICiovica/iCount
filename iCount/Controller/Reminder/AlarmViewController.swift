@@ -30,6 +30,11 @@ class AlarmViewController: UITableViewController, UITextFieldDelegate, UIImagePi
             tapToSelectImage.isHidden = true
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
+    }
+    
 
     func textFieldDidEndEditing(_ textField: UITextField) {
         alarm.name = name.text!

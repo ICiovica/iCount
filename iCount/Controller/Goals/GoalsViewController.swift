@@ -31,4 +31,8 @@ class GoalsViewController: UIViewController {
         gradient.endPoint = CGPoint(x: 0, y: 0)
         view.layer.addSublayer(gradient)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
+    }
 }

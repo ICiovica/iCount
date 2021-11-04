@@ -50,6 +50,10 @@ class ViewController: UIViewController {
         dateLabel.textColor = .clear
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
+    }
+    
     @objc func rollDate() {
         dateLabel.textColor = .white
         dateLabel.text = dueDateFormatter.string(from: date)

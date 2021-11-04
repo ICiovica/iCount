@@ -23,10 +23,12 @@ class ReminderViewController: UITableViewController, UNUserNotificationCenterDel
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
         // user might have changed this group, so we need to refresh
         // its content here
         load()
     }
+
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1

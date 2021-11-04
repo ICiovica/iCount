@@ -41,6 +41,10 @@ class ResultsViewController: UIViewController {
         settingsLabel.text = settings
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
+    }
+    
     @IBAction func recalculateTapped(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }

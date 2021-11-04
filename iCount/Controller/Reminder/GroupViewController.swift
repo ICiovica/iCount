@@ -23,6 +23,7 @@ class GroupViewController: UITableViewController, UITextFieldDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
 
         tableView.reloadData()
     }

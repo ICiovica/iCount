@@ -42,12 +42,15 @@ class HomeViewController: UIViewController {
         gradient.endPoint = CGPoint(x: 0, y: 0)
         view.layer.addSublayer(gradient)
         
-
         
         infoLabel.text = "The app is designed to offer an all in one organizer for your daily basis activities (e.g., Calculator, Reminder, Split a bill, Bitcoin currency converter, Euro currency converter, and more).\n\nEnjoy!"
         
         infoLabel.adjustsFontSizeToFitWidth = true
         trackTitle.adjustsFontSizeToFitWidth = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
     }
     
     @IBAction func playPauseRegognizer(_ sender: UITapGestureRecognizer) {

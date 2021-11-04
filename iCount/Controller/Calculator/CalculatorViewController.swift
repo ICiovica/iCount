@@ -48,6 +48,10 @@ class CalculatorViewController: UIViewController {
         view.layer.addSublayer(gradient)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
+    }
+    
     private var calculator = CalculatorLogic()
     
     @IBAction func calcButtonPressed(_ sender: UIButton) {

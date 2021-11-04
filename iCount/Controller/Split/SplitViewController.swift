@@ -48,6 +48,10 @@ class SplitViewController: UIViewController {
         self.view.addGestureRecognizer(tapRecognizer)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
+    }
+    
     @objc func didTapView(){
       self.view.endEditing(true)
     }

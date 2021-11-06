@@ -76,12 +76,17 @@ class ExchangeViewController: UIViewController, UIPickerViewDataSource, UIPicker
         
         let selectedCurrency = coinManager.currencyArray[row]
         let position = coinManager.currencyArray.firstIndex(of: selectedCurrency)
+        
+        
         currencyLabel.text = selectedCurrency
         coinManager.getCoinPrice(for: selectedCurrency, position: position)
         
-        if coinLabel.text == "" {
-            coinLabel.text = "Too many requests"
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            if self.coinLabel.text == "" {
+                self.coinLabel.text = "Too many requests"
+            }
         }
+ 
         
         coinView.isHidden = false
     }

@@ -80,13 +80,17 @@ class InvestViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         chooseText.isHidden = true
         
         let selectedCurrency = coinManager.currencyArray[row]
+        
         currencyLabel.text = selectedCurrency
         coinManager.getCoinPrice(for: selectedCurrency)
         bitcoinView.isHidden = false
         
-        if bitcoinLabel.text == "" {
-            bitcoinLabel.text = "Too many requests"
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            if self.bitcoinLabel.text == "" {
+                self.bitcoinLabel.text = "Too many requests"
+            }
         }
+
     }
 }
 

@@ -6,6 +6,7 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -433,10 +434,10 @@
                         <segue destination="ERm-ZM-xPx" kind="show" identifier="Spendings" id="Nb4-Yp-7Kh"/>
                         <segue destination="67g-xf-hV4" kind="show" identifier="Split" id="SeL-v7-sKz"/>
                         <segue destination="3PD-Mf-abl" kind="show" identifier="Calculator" id="91P-hF-tZf"/>
-                        <segue destination="nOe-DT-vXd" kind="show" identifier="Birthday" id="5wQ-53-lfA"/>
                         <segue destination="xMc-et-dmO" kind="show" identifier="Home" id="oMG-E8-8ic"/>
                         <segue destination="aIu-eO-L3I" kind="show" identifier="Reminder" id="U0d-mY-Fmw"/>
                         <segue destination="6dO-JW-FZX" kind="show" identifier="Converter" id="yAF-Lf-Ki6"/>
+                        <segue destination="hUv-Qt-P3T" kind="show" identifier="Birthday" id="bFJ-cb-3yo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qSM-lb-LHB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1486,21 +1487,93 @@
             </objects>
             <point key="canvasLocation" x="574" y="-704"/>
         </scene>
-        <!--Birthday-->
-        <scene sceneID="p9p-iP-cgT">
+        <!--Birthday View Controller-->
+        <scene sceneID="oWS-Yg-KvF">
             <objects>
-                <viewController id="nOe-DT-vXd" customClass="BirthdayViewController" customModule="iCount" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2Kn-At-lnG">
+                <collectionViewController id="hUv-Qt-P3T" customClass="BirthdayViewController" customModule="iCount" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="GNo-X9-0Ll">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="d98-zd-Glf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Birthday" id="5r2-ir-KTG"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Y5-tz-srD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="KrK-Hv-0MN">
+                            <size key="itemSize" width="150" height="200"/>
+                            <size key="estimatedItemSize" width="150" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Person" id="qpE-ZK-pja" customClass="PersonCell" customModule="iCount" customModuleProvider="target">
+                                <rect key="frame" x="20" y="20" width="150" height="225"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2nl-au-Jf7">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="225"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JT8-nD-69g">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="25"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="GTf-UK-DYh"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DAD-Pm-mbU">
+                                            <rect key="frame" x="0.0" y="37" width="150" height="146"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="PAt-fb-ogT"/>
+                                                <constraint firstAttribute="height" constant="150" id="nX4-mc-kA6"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="75"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czH-hT-MAl">
+                                            <rect key="frame" x="0.0" y="200" width="150" height="25"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="DAD-Pm-mbU" firstAttribute="leading" secondItem="2nl-au-Jf7" secondAttribute="leading" id="4iA-hZ-WWn"/>
+                                        <constraint firstItem="JT8-nD-69g" firstAttribute="leading" secondItem="2nl-au-Jf7" secondAttribute="leading" id="BH3-0g-ALl"/>
+                                        <constraint firstAttribute="trailing" secondItem="JT8-nD-69g" secondAttribute="trailing" id="T70-zj-WWS"/>
+                                        <constraint firstAttribute="bottom" secondItem="czH-hT-MAl" secondAttribute="bottom" id="U9t-lo-tsS"/>
+                                        <constraint firstAttribute="trailing" secondItem="DAD-Pm-mbU" secondAttribute="trailing" id="Uoa-ur-DxT"/>
+                                        <constraint firstItem="czH-hT-MAl" firstAttribute="top" secondItem="DAD-Pm-mbU" secondAttribute="bottom" constant="15" id="VIn-H8-TTS"/>
+                                        <constraint firstItem="czH-hT-MAl" firstAttribute="leading" secondItem="2nl-au-Jf7" secondAttribute="leading" id="Vea-fB-8gV"/>
+                                        <constraint firstAttribute="trailing" secondItem="czH-hT-MAl" secondAttribute="trailing" id="YDB-Aw-rJG"/>
+                                        <constraint firstAttribute="bottom" secondItem="czH-hT-MAl" secondAttribute="bottom" id="Ye4-9a-CUq"/>
+                                        <constraint firstItem="DAD-Pm-mbU" firstAttribute="top" secondItem="JT8-nD-69g" secondAttribute="bottom" constant="10" id="mrC-gI-AtX"/>
+                                        <constraint firstItem="JT8-nD-69g" firstAttribute="top" secondItem="2nl-au-Jf7" secondAttribute="top" id="suT-4B-wdP"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="customSize" width="150" height="225"/>
+                                <connections>
+                                    <outlet property="dateLabel" destination="czH-hT-MAl" id="neD-Xy-UIG"/>
+                                    <outlet property="imageView" destination="DAD-Pm-mbU" id="A92-18-oWS"/>
+                                    <outlet property="nameLabel" destination="JT8-nD-69g" id="EWm-Uv-xS1"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="hUv-Qt-P3T" id="UuD-7K-3yf"/>
+                            <outlet property="delegate" destination="hUv-Qt-P3T" id="47C-z4-x57"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="Yup-Cx-GU2"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9uf-Nb-dxH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1249" y="-704"/>
+            <point key="canvasLocation" x="1255.072463768116" y="-735.26785714285711"/>
         </scene>
         <!--Calculator-->
         <scene sceneID="Ix0-pI-veB">
@@ -2280,6 +2353,7 @@
         <image name="bitcoinsign.circle.fill" catalog="system" width="128" height="121"/>
         <image name="eurosign.circle.fill" catalog="system" width="128" height="121"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="profile.JPG" width="1897" height="1919"/>
         <image name="safari" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">

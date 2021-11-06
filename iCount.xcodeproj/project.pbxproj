@@ -34,6 +34,8 @@
 		AC40B1ED272B379100A4D0D3 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1EC272B379100A4D0D3 /* GroupViewController.swift */; };
 		AC40B1EF272B394E00A4D0D3 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1EE272B394E00A4D0D3 /* Helper.swift */; };
 		AC40B1F1272B3EB100A4D0D3 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1F0272B3EB100A4D0D3 /* AlarmViewController.swift */; };
+		AC6C689D2735346300E80EA1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C689C2735346300E80EA1 /* Person.swift */; };
+		AC6C68A02735359100E80EA1 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C689F2735359100E80EA1 /* PersonCell.swift */; };
 		AC77C7E4272D73BD003B1E00 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77C7E3272D73BD003B1E00 /* CoinData.swift */; };
 		AC77C7E6272D73D9003B1E00 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77C7E5272D73D9003B1E00 /* CoinManager.swift */; };
 		AC963A21272C2F5100898BEB /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC963A20272C2F5100898BEB /* CalculatorLogic.swift */; };
@@ -73,6 +75,8 @@
 		AC40B1EC272B379100A4D0D3 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		AC40B1EE272B394E00A4D0D3 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		AC40B1F0272B3EB100A4D0D3 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		AC6C689C2735346300E80EA1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		AC6C689F2735359100E80EA1 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		AC77C7E3272D73BD003B1E00 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 		AC77C7E5272D73D9003B1E00 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 		AC963A20272C2F5100898BEB /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 		AC40B1DA272B361E00A4D0D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AC6C689E2735346E00E80EA1 /* Birthday */,
 				AC40B1BE272AB20200A4D0D3 /* Extensions.swift */,
 				AC1C200C273077C30016AB0B /* Exchange */,
 				AC77C7E7272D73F1003B1E00 /* Crypto */,
@@ -272,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				AC40B1D2272AC47D00A4D0D3 /* BirthdayViewController.swift */,
+				AC6C689F2735359100E80EA1 /* PersonCell.swift */,
 			);
 			path = Birthday;
 			sourceTree = "<group>";
@@ -302,6 +308,14 @@
 				AC40B1DB272B362E00A4D0D3 /* Group.swift */,
 			);
 			path = Reminder;
+			sourceTree = "<group>";
+		};
+		AC6C689E2735346E00E80EA1 /* Birthday */ = {
+			isa = PBXGroup;
+			children = (
+				AC6C689C2735346300E80EA1 /* Person.swift */,
+			);
+			path = Birthday;
 			sourceTree = "<group>";
 		};
 		AC77C7E7272D73F1003B1E00 /* Crypto */ = {
@@ -456,6 +470,8 @@
 				AC40B1A52729FC6300A4D0D3 /* SceneDelegate.swift in Sources */,
 				AC40B1C1272AB55C00A4D0D3 /* SettingsViewController.swift in Sources */,
 				AC40B1C7272AC39900A4D0D3 /* InvestViewController.swift in Sources */,
+				AC6C68A02735359100E80EA1 /* PersonCell.swift in Sources */,
+				AC6C689D2735346300E80EA1 /* Person.swift in Sources */,
 				AC1C200B273077BC0016AB0B /* ExchangeManager.swift in Sources */,
 				AC40B1DE272B365800A4D0D3 /* Alarm.swift in Sources */,
 				AC40B1C3272AC33E00A4D0D3 /* BadgesViewController.swift in Sources */,

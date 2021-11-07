@@ -53,70 +53,8 @@ class BirthdayViewController: UICollectionViewController, UIImagePickerControlle
     }
 
     @objc func addNewPerson() {
-        let picker = UIImagePickerController()
-        picker.allowsEditing = true
-        picker.delegate = self
-        present(picker, animated: true)
-    }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        guard let image = info[.editedImage] as? UIImage else { return }
-        
-        let imageName = UUID().uuidString
-        let imagePath = getDocumentsDirectory().appendingPathComponent(imageName)
-        
-        if let jpegData = image.jpegData(compressionQuality: 0.8) {
-            try? jpegData.write(to: imagePath)
-        }
-        
-        let person = Person(name: "Unknown", image: imageName, day: "Date of Birth", month: "")
-        people.append(person)
-        save()
-        collectionView.reloadData()
-        
-        dismiss(animated: true)
-    }
-    
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let person = people[indexPath.item]
-        
-        let ac = UIAlertController(title: "Edit details", message: nil, preferredStyle: .alert)
-        
-        ac.addTextField(configurationHandler: { text in
-            text.placeholder = "Rename Person"
-        })
-        
-        ac.addTextField { text in
-            text.placeholder = "Day Of Birth: e.g., 14"
-        }
-        
-        ac.addTextField { text in
-            text.placeholder = "Month Of Birth: e.g., 7"
-        }
-        
-        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        
-        ac.addAction(UIAlertAction(title: "OK", style: .default) { [weak self, weak ac] _ in
-            guard let newName = ac?.textFields?[0].text else { return }
-            
-            person.name = newName
-            
-            guard let dayOfBirth = ac?.textFields?[1].text else { return }
-            person.day = dayOfBirth
-            
-            guard let monthOfBirth = ac?.textFields?[2].text else { return }
-            person.month = monthOfBirth
-            
-            
-            self?.save()
-            self?.collectionView.reloadData()
-        })
-        present(ac, animated: true)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "PersonTable") as! PersonTableViewController
+        present(vc, animated: true, completion: nil)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -130,7 +68,7 @@ class BirthdayViewController: UICollectionViewController, UIImagePickerControlle
         let person = people[indexPath.item]
         
         cell.nameLabel.text = person.name
-        cell.dateLabel.text = person.day + " " + person.month
+        cell.dateLabel.text = person.dob
         
         let path = getDocumentsDirectory().appendingPathComponent(person.image)
         cell.imageView.image = UIImage(contentsOfFile: path.path)
@@ -138,14 +76,39 @@ class BirthdayViewController: UICollectionViewController, UIImagePickerControlle
         return cell
     }
     
-    func save() {
-        let jsonEncoder = JSONEncoder()
-        
-        if let savedData = try? jsonEncoder.encode(people) {
-            let defaults = UserDefaults.standard
-            defaults.set(savedData, forKey: "people")
-        } else {
-            print("Failed to save people.")
-        }
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let image = info[.editedImage] as? UIImage else { return }
+        
+        let imageName = UUID().uuidString
+        let imagePath = getDocumentsDirectory().appendingPathComponent(imageName)
+        
+        if let jpegData = image.jpegData(compressionQuality: 0.8) {
+            try? jpegData.write(to: imagePath)
+        }
+        
+        let person = Person(name: "Unknown", image: imageName, dob: "Date of Birth")
+        people.append(person)
+        save()
+        collectionView.reloadData()
+        
+        dismiss(animated: true)
+    }
+    
+    func save() {
+         let jsonEncoder = JSONEncoder()
+         
+         if let savedData = try? jsonEncoder.encode(people) {
+             let defaults = UserDefaults.standard
+             defaults.set(savedData, forKey: "people")
+         } else {
+             print("Failed to save people.")
+         }
+     }
+    
+
 }

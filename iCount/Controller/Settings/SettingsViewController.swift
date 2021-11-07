@@ -44,36 +44,38 @@ class SettingsViewController: UIViewController {
         gradient.endPoint = CGPoint(x: 0, y: 0)
         view.layer.addSublayer(gradient)
         
-        let circlePath = UIBezierPath(arcCenter: view.center, radius: (img.frame.height / 2) - 30, startAngle: 0, endAngle: .pi * 2, clockwise: true)
+        let radius = img.bounds.size.height / 2
+        
+        let circlePath = UIBezierPath(arcCenter: view.center, radius: radius, startAngle: 0, endAngle: .pi * 2, clockwise: true)
         
         baseShape.path = circlePath.cgPath
-        baseShape.lineWidth = 30
+        baseShape.lineWidth = 25
         baseShape.strokeColor = UIColor.white.cgColor
         baseShape.fillColor = UIColor.clear.cgColor
         view.layer.addSublayer(baseShape)
         
-        let redPath = UIBezierPath(arcCenter: view.center, radius: (img.frame.height / 2) - 30, startAngle: 3 * .pi / 2, endAngle: .pi / 6, clockwise: true)
+        let redPath = UIBezierPath(arcCenter: view.center, radius: radius, startAngle: 3 * .pi / 2, endAngle: .pi / 6, clockwise: true)
         
         redShape.path = redPath.cgPath
-        redShape.lineWidth = 30
+        redShape.lineWidth = 25
         redShape.strokeColor = UIColor.systemRed.cgColor
         redShape.fillColor = UIColor.clear.cgColor
         redShape.strokeEnd = 0
         view.layer.addSublayer(redShape)
         
-        let yellowPath = UIBezierPath(arcCenter: view.center, radius: (img.frame.height / 2) - 30, startAngle: .pi / 6, endAngle: 5 * .pi / 6, clockwise: true)
+        let yellowPath = UIBezierPath(arcCenter: view.center, radius: radius, startAngle: .pi / 6, endAngle: 5 * .pi / 6, clockwise: true)
         
         yellowShape.path = yellowPath.cgPath
-        yellowShape.lineWidth = 30
+        yellowShape.lineWidth = 25
         yellowShape.strokeColor = UIColor.systemYellow.cgColor
         yellowShape.fillColor = UIColor.clear.cgColor
         yellowShape.strokeEnd = 0
         view.layer.addSublayer(yellowShape)
         
-        let bluePath = UIBezierPath(arcCenter: view.center, radius: (img.frame.height / 2) - 30, startAngle: 5 * .pi / 6, endAngle: 3 * .pi / 2, clockwise: true)
+        let bluePath = UIBezierPath(arcCenter: view.center, radius: radius, startAngle: 5 * .pi / 6, endAngle: 3 * .pi / 2, clockwise: true)
         
         blueShape.path = bluePath.cgPath
-        blueShape.lineWidth = 30
+        blueShape.lineWidth = 25
         blueShape.strokeColor = UIColor.systemBlue.cgColor
         blueShape.fillColor = UIColor.clear.cgColor
         blueShape.strokeEnd = 0

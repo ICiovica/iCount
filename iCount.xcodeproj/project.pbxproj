@@ -11,6 +11,7 @@
 		AC1C2009273077AF0016AB0B /* ExchangeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C2008273077AF0016AB0B /* ExchangeData.swift */; };
 		AC1C200B273077BC0016AB0B /* ExchangeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C200A273077BC0016AB0B /* ExchangeManager.swift */; };
 		AC1C200E2730993D0016AB0B /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C200D2730993D0016AB0B /* ExchangeViewController.swift */; };
+		AC3245BD273A76340073F19D /* HelperBirth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3245BC273A76340073F19D /* HelperBirth.swift */; };
 		AC40B1A32729FC6300A4D0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1A22729FC6300A4D0D3 /* AppDelegate.swift */; };
 		AC40B1A52729FC6300A4D0D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1A42729FC6300A4D0D3 /* SceneDelegate.swift */; };
 		AC40B1AA2729FC6300A4D0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC40B1A82729FC6300A4D0D3 /* Main.storyboard */; };
@@ -36,7 +37,7 @@
 		AC40B1F1272B3EB100A4D0D3 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B1F0272B3EB100A4D0D3 /* AlarmViewController.swift */; };
 		AC6C689D2735346300E80EA1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C689C2735346300E80EA1 /* Person.swift */; };
 		AC6C68A02735359100E80EA1 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C689F2735359100E80EA1 /* PersonCell.swift */; };
-		AC6C68A2273821B100E80EA1 /* PersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C68A1273821B100E80EA1 /* PersonTableViewController.swift */; };
+		AC6C68A2273821B100E80EA1 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C68A1273821B100E80EA1 /* PersonViewController.swift */; };
 		AC77C7E4272D73BD003B1E00 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77C7E3272D73BD003B1E00 /* CoinData.swift */; };
 		AC77C7E6272D73D9003B1E00 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77C7E5272D73D9003B1E00 /* CoinManager.swift */; };
 		AC963A21272C2F5100898BEB /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC963A20272C2F5100898BEB /* CalculatorLogic.swift */; };
@@ -51,6 +52,7 @@
 		AC1C2008273077AF0016AB0B /* ExchangeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeData.swift; sourceTree = "<group>"; };
 		AC1C200A273077BC0016AB0B /* ExchangeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeManager.swift; sourceTree = "<group>"; };
 		AC1C200D2730993D0016AB0B /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
+		AC3245BC273A76340073F19D /* HelperBirth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperBirth.swift; sourceTree = "<group>"; };
 		AC40B19F2729FC6300A4D0D3 /* iCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC40B1A22729FC6300A4D0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC40B1A42729FC6300A4D0D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +80,7 @@
 		AC40B1F0272B3EB100A4D0D3 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		AC6C689C2735346300E80EA1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		AC6C689F2735359100E80EA1 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
-		AC6C68A1273821B100E80EA1 /* PersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewController.swift; sourceTree = "<group>"; };
+		AC6C68A1273821B100E80EA1 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		AC77C7E3272D73BD003B1E00 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 		AC77C7E5272D73D9003B1E00 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 		AC963A20272C2F5100898BEB /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
@@ -279,7 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				AC40B1D2272AC47D00A4D0D3 /* BirthdayViewController.swift */,
-				AC6C68A1273821B100E80EA1 /* PersonTableViewController.swift */,
+				AC6C68A1273821B100E80EA1 /* PersonViewController.swift */,
 				AC6C689F2735359100E80EA1 /* PersonCell.swift */,
 			);
 			path = Birthday;
@@ -317,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				AC6C689C2735346300E80EA1 /* Person.swift */,
+				AC3245BC273A76340073F19D /* HelperBirth.swift */,
 			);
 			path = Birthday;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				AC40B1DC272B362E00A4D0D3 /* Group.swift in Sources */,
 				AC1C2009273077AF0016AB0B /* ExchangeData.swift in Sources */,
 				AC40B1F1272B3EB100A4D0D3 /* AlarmViewController.swift in Sources */,
+				AC3245BD273A76340073F19D /* HelperBirth.swift in Sources */,
 				AC40B1C5272AC37D00A4D0D3 /* GoalsViewController.swift in Sources */,
 				AC40B1D5272AC49B00A4D0D3 /* ReminderViewController.swift in Sources */,
 				AC40B1ED272B379100A4D0D3 /* GroupViewController.swift in Sources */,
@@ -475,7 +479,7 @@
 				AC40B1C7272AC39900A4D0D3 /* InvestViewController.swift in Sources */,
 				AC6C68A02735359100E80EA1 /* PersonCell.swift in Sources */,
 				AC6C689D2735346300E80EA1 /* Person.swift in Sources */,
-				AC6C68A2273821B100E80EA1 /* PersonTableViewController.swift in Sources */,
+				AC6C68A2273821B100E80EA1 /* PersonViewController.swift in Sources */,
 				AC1C200B273077BC0016AB0B /* ExchangeManager.swift in Sources */,
 				AC40B1DE272B365800A4D0D3 /* Alarm.swift in Sources */,
 				AC40B1C3272AC33E00A4D0D3 /* BadgesViewController.swift in Sources */,

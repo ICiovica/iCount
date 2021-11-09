@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BirthdayViewController: UICollectionViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class BirthdayViewController: UICollectionViewController {
     
     lazy var gradient: CAGradientLayer = {
          let gradient = CAGradientLayer()
@@ -22,8 +22,6 @@ class BirthdayViewController: UICollectionViewController, UIImagePickerControlle
          return gradient
      }()
     
-    var people = [Person]()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,7 +31,8 @@ class BirthdayViewController: UICollectionViewController, UIImagePickerControlle
         gradient.endPoint = CGPoint(x: 0, y: 0)
         view.layer.addSublayer(gradient)
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewPerson))
+        collectionView.delegate = self
+        collectionView.dataSource = self
         
         let defaults = UserDefaults.standard
         
@@ -41,7 +40,7 @@ class BirthdayViewController: UICollectionViewController, UIImagePickerControlle
             let jsonDecoder = JSONDecoder()
             
             do {
-                people = try jsonDecoder.decode([Person].self, from: savedPeople)
+                PersonViewController.persons = try jsonDecoder.decode([Person].self, from: savedPeople)
             } catch {
                 print("Failed to load people.")
             }
@@ -50,65 +49,65 @@ class BirthdayViewController: UICollectionViewController, UIImagePickerControlle
     
     override func viewWillAppear(_ animated: Bool) {
         AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
-    }
-
-    @objc func addNewPerson() {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "PersonTable") as! PersonTableViewController
-        present(vc, animated: true, completion: nil)
+        load()
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return people.count
+        if PersonViewController.persons.isEmpty {
+            return 0
+        }
+        
+        return PersonViewController.persons.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Person", for: indexPath) as? PersonCell else {
             fatalError("Unable to dequeue PersonCell.")
         }
-        let person = people[indexPath.item]
-        
+
+        let person = PersonViewController.persons[indexPath.item]
+
         cell.nameLabel.text = person.name
         cell.dateLabel.text = person.dob
-        
-        let path = getDocumentsDirectory().appendingPathComponent(person.image)
+
+        let path = HelperBirth.getDocumentsDirectory().appendingPathComponent(person.image)
         cell.imageView.image = UIImage(contentsOfFile: path.path)
         
         return cell
     }
     
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let ac = UIAlertController(title: "Delete person", message: nil, preferredStyle: .alert)
+        
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        ac.addAction(UIAlertAction(title: "OK", style: .default) { [weak self] _ in
+            
+            PersonViewController.persons.remove(at: indexPath.item)
+            self?.save()
+            self?.collectionView.reloadData()
+        })
+        
+        present(ac, animated: true)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        guard let image = info[.editedImage] as? UIImage else { return }
-        
-        let imageName = UUID().uuidString
-        let imagePath = getDocumentsDirectory().appendingPathComponent(imageName)
-        
-        if let jpegData = image.jpegData(compressionQuality: 0.8) {
-            try? jpegData.write(to: imagePath)
-        }
-        
-        let person = Person(name: "Unknown", image: imageName, dob: "Date of Birth")
-        people.append(person)
-        save()
+    func load() {
         collectionView.reloadData()
-        
-        dismiss(animated: true)
+    }
+    
+    @IBAction func goToPerson(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "PersonView", sender: self)
     }
     
     func save() {
-         let jsonEncoder = JSONEncoder()
-         
-         if let savedData = try? jsonEncoder.encode(people) {
-             let defaults = UserDefaults.standard
-             defaults.set(savedData, forKey: "people")
-         } else {
-             print("Failed to save people.")
-         }
-     }
-    
-
+        let jsonEncoder = JSONEncoder()
+        
+        if let savedData = try? jsonEncoder.encode(PersonViewController.persons) {
+            let defaults = UserDefaults.standard
+            defaults.set(savedData, forKey: "people")
+        } else {
+            print("Failed to save people.")
+        }
+    }
 }

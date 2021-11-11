@@ -423,7 +423,7 @@
                             <constraint firstAttribute="trailing" secondItem="1gg-hx-m64" secondAttribute="trailing" id="u8n-zP-7lN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="XVP-zg-6lN"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="XVP-zg-6lN"/>
                     <connections>
                         <outlet property="dateLabel" destination="NOa-Z1-qne" id="Z1i-Nf-wok"/>
                         <segue destination="QNZ-Aj-FcZ" kind="show" identifier="Settings" id="6K7-og-x4X"/>
@@ -1126,7 +1126,7 @@
                             <constraint firstItem="Wdi-BE-kdb" firstAttribute="leading" secondItem="vSz-ss-M7e" secondAttribute="leading" id="xGe-Ea-4Vf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="YOR-qn-7mQ"/>
+                    <navigationItem key="navigationItem" title="Home" largeTitleDisplayMode="never" id="YOR-qn-7mQ"/>
                     <connections>
                         <outlet property="imagePlayer" destination="DNT-q4-g9t" id="Is2-ab-Bzc"/>
                         <outlet property="infoLabel" destination="qws-3n-D2r" id="WYd-TY-Hbj"/>
@@ -1310,7 +1310,7 @@
                             <outlet property="delegate" destination="nfU-d0-rp9" id="Dh5-Kr-OVD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Alarm" id="IdQ-HD-JXO"/>
+                    <navigationItem key="navigationItem" title="Alarm" largeTitleDisplayMode="never" id="IdQ-HD-JXO"/>
                     <connections>
                         <outlet property="caption" destination="Dsv-zc-DIO" id="pFp-oL-eBX"/>
                         <outlet property="datePicker" destination="B1n-fP-bbs" id="oYC-XQ-0qA"/>
@@ -1442,7 +1442,7 @@
                             <outlet property="delegate" destination="bIu-Wx-lNl" id="5ss-VR-zMG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Group" id="7IN-pz-amd"/>
+                    <navigationItem key="navigationItem" title="Group" largeTitleDisplayMode="never" id="7IN-pz-amd"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i53-WU-Cii" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1517,7 +1517,7 @@
                             <constraint firstItem="rI8-qa-xrS" firstAttribute="top" secondItem="Xoh-nZ-0WF" secondAttribute="bottom" constant="40" id="zcM-Om-L1f"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="c5M-wW-4ud">
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="c5M-wW-4ud">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="d5q-l2-LMN">
                             <connections>
                                 <action selector="savePerson:" destination="82I-Uk-eSz" id="yVF-M3-CIm"/>
@@ -1588,13 +1588,13 @@
                             <outlet property="delegate" destination="aIu-eO-L3I" id="s81-Z7-nfn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Reminder" id="0U9-Jj-2xt"/>
+                    <navigationItem key="navigationItem" title="Reminder" largeTitleDisplayMode="never" id="0U9-Jj-2xt"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gvr-LR-CYn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="574" y="-704"/>
         </scene>
-        <!--Birthday View Controller-->
+        <!--Birthday-->
         <scene sceneID="oWS-Yg-KvF">
             <objects>
                 <collectionViewController id="hUv-Qt-P3T" customClass="BirthdayViewController" customModule="iCount" customModuleProvider="target" sceneMemberID="viewController">
@@ -1689,7 +1689,7 @@
                             <outlet property="delegate" destination="hUv-Qt-P3T" id="47C-z4-x57"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="Yup-Cx-GU2">
+                    <navigationItem key="navigationItem" title="Birthday" largeTitleDisplayMode="never" id="Yup-Cx-GU2">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="vX3-1O-HU9">
                             <connections>
                                 <action selector="goToPerson:" destination="hUv-Qt-P3T" id="2mW-tx-tyK"/>
@@ -1989,7 +1989,7 @@
                             <constraint firstAttribute="bottom" secondItem="Bdy-IF-9L0" secondAttribute="bottom" id="fXx-gL-JUF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Calculator" id="kuP-kf-vMa"/>
+                    <navigationItem key="navigationItem" title="Calculator" largeTitleDisplayMode="never" id="kuP-kf-vMa"/>
                     <connections>
                         <outlet property="displayLabel" destination="ker-JF-L6g" id="IIu-eV-ppQ"/>
                     </connections>
@@ -2080,7 +2080,7 @@
                             <constraint firstItem="Nbd-uf-ea7" firstAttribute="bottom" secondItem="o8H-Mj-Fqt" secondAttribute="bottom" id="zxr-3C-OEG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DgM-sR-bll"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="DgM-sR-bll"/>
                     <connections>
                         <outlet property="settingsLabel" destination="Tih-w0-oZ4" id="NmY-Fr-jGe"/>
                         <outlet property="totalLabel" destination="jyk-eS-Ege" id="Vga-cb-Mpc"/>
@@ -2282,7 +2282,7 @@
                             <constraint firstItem="GJF-wk-eMl" firstAttribute="top" secondItem="IJH-mt-dBK" secondAttribute="top" constant="10" id="y01-dw-H6R"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Split" id="cMp-8n-Ghm"/>
+                    <navigationItem key="navigationItem" title="Split" largeTitleDisplayMode="never" id="cMp-8n-Ghm"/>
                     <connections>
                         <outlet property="billTextField" destination="Crl-yR-PQy" id="yKO-Qi-il2"/>
                         <outlet property="splitNumberLabel" destination="RiV-YV-gn0" id="JFF-de-bKE"/>
@@ -2444,7 +2444,7 @@
                             <constraint firstItem="FaL-bu-wsg" firstAttribute="leading" secondItem="G46-12-7iN" secondAttribute="leadingMargin" id="yfY-Wn-XNM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9sY-PL-nyb"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="9sY-PL-nyb"/>
                     <connections>
                         <outlet property="chooseCurrency" destination="wxt-Mu-9KY" id="ZDs-T8-Kiq"/>
                         <outlet property="chooseText" destination="JZG-X0-pep" id="xTi-rP-reS"/>
